@@ -1,0 +1,75 @@
+﻿$font: 'SFUIText', arial, verdana, sans-serif;
+$font-second: 'Muller', arial, verdana, sans-serif;
+$font-third: 'SFUIText-G1', arial, verdana, sans-serif;
+$font-fourth: 'Noto Serif', arial, verdana, sans-serif;
+$font-size: 16px;
+$main: #000;
+$brand-color: #2c63bc;
+$brand-color-second: #ef3756;
+$dark: #656565;
+$light: #fefefe;
+$color1: #3f9eff;
+$color2: #4388fe;
+$line: #d7d7d7;
+$fontLine:1.45;
+
+$h1Size:60px;
+$h2Size:24px;
+$h3Size:22px;
+$h4Size:18px;
+
+$min-width: 320px;
+$max-width: 1250px;
+
+$link-color: #000;
+
+/* catalog-general */
+
+/*@mixin shadow($shadowL,$shadowT,$shadowS,$shadowW,$shadowcolor){
+  -webkit-box-shadow: $shadowL $shadowT $shadowS $shadowW $shadowcolor;
+  -moz-box-shadow: $shadowL $shadowT $shadowS $shadowW $shadowcolor;
+  box-shadow: $shadowL $shadowT $shadowS $shadowW $shadowcolor;
+}*/
+@mixin font($font-s, $font-h, $font-c, $font-w) {
+  font-size: $font-s;
+  line-height: $font-h;
+  color:$font-c;
+  font-weight: $font-w;
+}
+@mixin clearafter(){
+  content: "";
+  display: block;
+  height: 1px;
+  overflow: hidden;
+  clear: both;
+}
+@mixin radius($border-radius) {
+  -webkit-border-radius: $border-radius;
+     -moz-border-radius: $border-radius;
+           border-radius:$border-radius;
+}
+@mixin before(){
+  content: "";
+  display: block;
+  overflow: hidden;
+  position: absolute;
+}
+@mixin animate($ani-time,$ani-prop){
+  -moz-transition-duration: $ani-time;
+  -webkit-transition-duration: $ani-time;
+  -o-transition-duration: $ani-time;
+  -ms-transition-duration: $ani-time;
+  transition-duration: $ani-time;
+  -webkit-transition-property: $ani-prop;
+  -ms-transition-property: $ani-prop;
+  -o-transition-property: $ani-prop;
+  -moz-transition-property: $ani-prop;
+  transition-property: $ani-prop;
+}
+@mixin transform-translate($transX,$transY){
+  transform: translateX($transX) translateY($transY);
+  -ms-transform: translateX($transX) translateY($transY);
+  -o-transform: translateX($transX) translateY($transY);
+  -moz-transform: translateX($transX) translateY($transY);
+  -webkit-transform: translateX($transX) translateY($transY);
+}

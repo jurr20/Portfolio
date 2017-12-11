@@ -1,0 +1,4 @@
+body > div { display: none; }
+body > div.load-ie { display: block; font-size: 40px; padding: 50px 0; text-align: center; }
+body > div.load-ie i { display: inline-block; background: url("../img/icons/sprite.png?ver1.1") -101px -51px no-repeat; height: 41px; margin: 0 0 11px 15px; vertical-align: bottom; width: 45px; }
+body.loaded .icon-load { display: none; }
