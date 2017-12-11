@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <title>PSY - Поиск в городе 2</title>
+    <meta name='description' content=""/>
+    <meta name="keywords" content=""/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body class="loaded">
+
+
+<!-- BEGIN BODY -->
+
+<div class="main-wrapper">
+
+    <!-- BEGIN CONTENT -->
+
+    <main class="content panel"  id="panel">
+        <section class="section-search section-search-2">
+            <div class="wrapper">
+                <div class="search-cont">
+                    <div class="title-block">
+                        <h1 class="title-block__main-title">Поиск психолога в</h1>
+                        <div class="title-form">
+                            <form class="form-cont">
+                                <div class="box-field">
+                                    <div class="box-field__input select-city">
+                                        <select class="js-styled select select_mini">
+                                            <option value="Санкт- Петербурге">Санкт- Петербурге</option>
+                                            <option value="Москве">Москве</option>
+                                            <option value="Санкт- Петербурге">Санкт- Петербурге</option>
+                                            <option value="Санкт- Петербурге">Санкт- Петербурге</option>
+                                        </select>
+                                    </div>
+                                    <div class="box-field__input select select-2 with-icon select-metro">
+                                        <div class="select-icon img-metro">
+                                            <select class="js-styled select ">
+                                                <option value="Санкт- Петербурге">Александровский сад</option>
+                                                <option value="Москве">Арбатская</option>
+                                                <option value="Санкт- Петербурге">Библиотека им. Ленина</option>
+                                                <option value="Санкт- Петербурге">Смоленская</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="block-shadow"></div>
+                    </div>
+
+                    <div class="section-content">
+                        <div class="filter-form-wrap">
+                            <a href="#filter_form" id="popup_open" class="mobile-section-name js-fancybox"><span class="control-icon"><i class="img-filter-plus"></i></span>Фильтры</a>
+
+                            <form action="#" id="filter_form" class="filter-form">
+                                <p class="filter-form__title">Фильтры</p>
+
+                                <div class="filter-form__item item-1">
+                                    <span class="filter-form__filter-name">Специализация</span>
+
+                                    <select name="specialization" id="filter_specialization" class="filter-form__filter-select js-styled">
+                                        <option value="">Семейные отношения</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                </div>
+
+                                <div class="filter-form__item item-2">
+                                    <span class="filter-form__filter-name">Направление</span>
+
+                                    <select name="direction" id="filter_direction" class="filter-form__filter-select js-styled">
+                                        <option value="">Нарративные техники</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                </div>
+
+                                <div class="filter-form__item item-3">
+                                    <span class="filter-form__filter-name">Образование</span>
+
+                                    <select name="education" id="filter_education" class="filter-form__filter-select js-styled">
+                                        <option value="">Учёная степень</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                </div>
+
+                                <div class="filter-form__item item-4">
+                                    <span class="filter-form__filter-name">Стоимость</span>
+
+                                    <div class="filter-form__input-wrap">
+                                        <div class="filter-form__value-block">
+                                            <label for="min_val" class="filter-form__label">
+                                                <input type="text" id="min_val" class="filter-form__input" placeholder="100">
+                                            </label>
+
+                                            <span class="separate"></span>
+
+                                            <label for="max_val" class="filter-form__label">
+                                                <input type="text" id="max_val" class="filter-form__input" placeholder="3500">
+                                            </label>
+
+                                            <span class="control-icon">
+                                                <i class="img-ruble"></i>
+                                            </span>
+                                        </div>
+
+                                        <label for="free_val" class="filter-form__label label-free">
+                                            <input type="checkbox" id="free_val" class="filter-form__checkbox" checked>
+                                            <span class="filter-form__pseudo-check"></span>
+                                            <span class="filter-form__check-text">Бесплатно</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="filter-form__item item-5">
+                                    <span class="filter-form__filter-name">Часы работы</span>
+
+                                    <div class="filter-form__input-wrap">
+                                        <div class="filter-form__value-block no-pad time-row">
+                                            <label for="filter_time_from" class="filter-form__label label-time">
+                                                <span class="filter-form__separate-text">от</span>
+
+                                                <input type="text" id="filter_time_from" class="filter-form__input filter-form__input-time js-mask" value="09:00">
+                                            </label>
+
+                                            <span class="separate"></span>
+
+                                            <label for="filter_time_to" class="filter-form__label label-time">
+                                                <span class="filter-form__separate-text">до</span>
+
+                                                <input type="text" id="filter_time_to" class="filter-form__input filter-form__input-time js-mask" value="20:00">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="filter-form__item item-6">
+                                    <span class="filter-form__filter-name filter-name_inline">Рейтинг</span>
+
+                                    <div class="filter-form__rating-block">
+                                        <div id="rating_slider" class="filter-form__rating"></div>
+                                    </div>
+                                </div>
+
+                                <div class="filter-form__item item-7">
+                                    <span class="filter-form__filter-name filter-name_inline">Пол</span>
+
+                                    <div class="filter-form__radio-wrap">
+                                        <label for="filter_female" class="filter-form__label">
+                                            <input type="radio" name="gender" id="filter_female" class="filter-form__radio" value="female" checked>
+                                            <span class="filter-form__pseudo-radio">Женский</span>
+                                        </label>
+
+                                        <label for="filter_male" class="filter-form__label">
+                                            <input type="radio" name="gender" id="filter_male" class="filter-form__radio" value="male">
+                                            <span class="filter-form__pseudo-radio">Мужской</span>
+                                        </label>
+                                    </div>
+
+                                    <select name="education" id="filter_sex" class="filter-form__filter-select filter-form__control-inline js-styled mob-sex">
+                                        <option value="Мужской">Мужской</option>
+                                        <option value="Женский">Женский</option>
+                                    </select>
+                                </div>
+
+                                <div class="filter-form__item item-8">
+                                    <span class="filter-form__filter-name filter-name_inline">Возраст</span>
+
+                                    <select name="filter_age" id="filter_age" class="filter-form__filter-select filter_age js-styled">
+                                        <option value="">45</option>
+                                        <option value="">35</option>
+                                        <option value="">25</option>
+                                    </select>
+                                </div>
+
+                                <div class="filter-form__item item-btn">
+                                    <a href="#" class="btn btn-mini">
+                                        <span class="btn-text">Найти психолога</span>
+                                        <span class="btn-shadow"></span>
+                                    </a>
+                                </div>
+
+                                <div class="filter-form__item filter-form__mob-control">
+                                    <button class="btn btn-mini">
+                                        <span class="btn-text">Применить</span>
+                                        <span class="btn-shadow"></span>
+                                    </button>
+                                    <div class="form-reset">
+                                        <a href="" class="form-reset__link">СБРОСИТЬ ФИЛЬТРЫ</a>
+                                    </div>
+                                </div>
+
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-map section-map2">
+            <div class="wrapper">
+                <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+                <script>
+                                
+                    ymaps.ready(function () {
+                        var myMap = new ymaps.Map('map', {
+                            center: [55.749539, 37.603494],
+                            zoom: 14
+                        }, {
+                            searchControlProvider: 'yandex#search'
+                        }),
+
+                        // Создаём макет содержимого.
+                        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+                        ),
+
+                        getPointData = function (index) {
+                            return {
+                                balloonContentBody: 'балун <strong>метки ' + index + '</strong>',
+                                clusterCaption: 'метка <strong>' + index + '</strong>'
+                            };
+                        },
+                        points = [
+                            [55.750894, 37.599631], 
+                            [55.749539, 37.598344], 
+                            [55.748522, 37.602807], 
+                            [55.748958, 37.6114394], 
+                            [55.745860, 37.599288], [55.745860, 37.599288], [55.745860, 37.599288], [55.745860, 37.599288, [55.745860, 37.599288], 55.745860, 37.599288], [55.745860, 37.599288], [55.745860, 37.599288], [55.745860, 37.599288], [55.745860, 37.599288], [55.745860, 37.599288], [55.745860, 37.599288], [55.745860, 37.599288], [55.745860, 37.599288], [55.745860, 37.599288], [55.745860, 37.599288], [55.745860, 37.599288], [55.745860, 37.599288], [55.745860, 37.599288], [55.745860, 37.599288], [55.745860, 37.599288], [55.745860, 37.599288], [55.745860, 37.599288], [55.745860, 37.599288], [55.745860, 37.599288],
+                            [55.744117, 37.590533],
+                            [55.750870, 37.555171], [55.750870, 37.555171], [55.750870, 37.555171], [55.750870, 37.555171], [55.750870, 37.555171],
+                            [55.746513, 37.568475], [55.746513, 37.568475], [55.746513, 37.568475], [55.746513, 37.568475], [55.746513, 37.568475], [55.746513, 37.568475], [55.746513, 37.568475], [55.746513, 37.568475], [55.746513, 37.568475], [55.746513, 37.568475],
+                            [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138], [55.749300, 37.584138],
+                            [55.747515, 37.650990], [55.747515, 37.650990], [55.747515, 37.650990], [55.747515, 37.650990], [55.747515, 37.650990]
+                        ],
+                        geoObjects = [];
+
+                        for (var i = 0, len = points.length; i < len; i++) {
+                            geoObjects[i] = new ymaps.Placemark(points[i], getPointData(i));
+                        }
+                        clusterer = new ymaps.Clusterer({
+                            // Зададим массив, описывающий иконки кластеров разного размера.
+                            clusterIcons: [
+                                {
+                                    href: 'img/pin.png',
+                                    size: [42, 47],
+                                    offset: [-21, -43]
+                                },
+                                {
+                                    href: 'img/m1.png',
+                                    size: [72, 72],
+                                    offset: [-34, -34],
+                                },
+                                {
+                                    href: 'img/m2.png',
+                                    size: [92, 92],
+                                    offset: [-45, -45]
+                                },
+                                {
+                                    href: 'img/m3.png',
+                                    size: [100, 100],
+                                    offset: [-55, -55],
+                                },
+                                {
+                                    href: 'img/m4.png',
+                                    size: [138, 138],
+                                    offset: [-69, -69]
+                                }],
+                            // Эта опция отвечает за размеры кластеров.
+                            // В данном случае для кластеров, содержащих до 100 элементов,
+                            // будет показываться маленькая иконка. Для остальных - большая.
+                            clusterNumbers: [1, 9, 19, 29]
+                            // clusterIconContentLayout: null
+                        }),
+
+                        clusterer.add(geoObjects);
+                        myMap.geoObjects.add(clusterer);
+
+                        myMap.setBounds(clusterer.getBounds(), {
+                            checkZoomRange: true
+                        });
+
+                        if($('body').is('.ios')){       
+                            myMap.behaviors.disable('drag');
+                            myMap.behaviors.disable('multiTouch');
+                        }
+
+                    });
+                </script>
+
+                <div id="map"></div>
+            </div>
+        </div>
+        <div class="section-card3">
+            <div class="wrapper">
+                <div class="card3-list">
+                    <div class="card3-list__item">
+                        <div class="banner">
+                            <div class="banner-holder">
+                                <div class="banner-cont">
+                                    <div class="card3-list__img">
+                                        <a href="#" class="like like-2 js-like"></a>
+                                        <a href="#" class="card__img-holder"><img src="img/card2_img1.png" alt=""></a>
+                                    </div>
+                                    <a href="#" class="card3-list__psy">Николай Мальцев</a>
+                                    <div class="card3-list__info">
+                                        <div class="card3-list__info-holder">
+                                            <div class="card__feature">
+                                                <div class="stars stars2">
+                                                    <span class="stars-active" style="width: 90%;"></span>
+                                                </div>
+                                                <a href="#"  class="link3">155 отзывов</a>
+                                                <div class="card__person-position with-icon">
+                                                    <i class="icon-ribbon"></i>
+                                                    <span>Учебно-оздоровительный центр «Здравница»</span>
+                                                </div>
+                                            </div>
+                                            <div class="raiting">
+                                                <div class="raiting__title">общий рейтинг</div>
+                                                <div class="raiting__value">98,5</div>
+                                            </div>
+                                            <div class="card3-list__feature-mob">
+                                                <div class="stars stars2">
+                                                    <span class="stars-active" style="width: 90%;"></span>
+                                                </div>
+                                                <a href="#"  class="link3">155 отзывов</a>
+                                            </div>
+                                            <div class="card3-list__btn">
+                                                <a href="#" class="btn btn-mini">
+                                                    Записаться на прием
+                                                    <span class="btn-shadow"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card3-list__item">
+                        <div class="banner">
+                            <div class="banner-holder">
+                                <div class="banner-cont">
+                                    <div class="card3-list__img">
+                                        <a href="#" class="like like-2 js-like"></a>
+                                        <a href="#" class="card__img-holder"><img src="img/card2_img2.png" alt=""></a>
+                                    </div>
+                                    <a href="#" class="card3-list__psy">Николай Мальцев</a>
+                                    <div class="card3-list__info">
+                                        <div class="card3-list__info-holder">
+                                            <div class="card__feature">
+                                                <div class="stars stars2">
+                                                    <span class="stars-active" style="width: 90%;"></span>
+                                                </div>
+                                                <a href="#"  class="link3">155 отзывов</a>
+                                                <div class="card__person-position with-icon">
+                                                    <i class="icon-ribbon"></i>
+                                                    <span>Учебно-оздоровительный центр «Здравница»</span>
+                                                </div>
+                                            </div>
+                                            <div class="raiting">
+                                                <div class="raiting__title">общий рейтинг</div>
+                                                <div class="raiting__value">98,5</div>
+                                            </div>
+                                            <div class="card3-list__feature-mob">
+                                                <div class="stars stars2">
+                                                    <span class="stars-active" style="width: 90%;"></span>
+                                                </div>
+                                                <a href="#"  class="link3">155 отзывов</a>
+                                            </div>
+                                            <div class="card3-list__btn">
+                                                <a href="#" class="btn btn-mini">
+                                                    Записаться на прием
+                                                    <span class="btn-shadow"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card3-list__item">
+                        <div class="banner">
+                            <div class="banner-holder">
+                                <div class="banner-cont">
+                                    <div class="card3-list__img">
+                                        <a href="#" class="like like-2 js-like"></a>
+                                        <a href="#" class="card__img-holder"><img src="img/card2_img3.png" alt=""></a>
+                                    </div>
+                                    <a href="#" class="card3-list__psy">Николай Мальцев</a>
+                                    <div class="card3-list__info">
+                                        <div class="card3-list__info-holder">
+                                            <div class="card__feature">
+                                                <div class="stars stars2">
+                                                    <span class="stars-active" style="width: 90%;"></span>
+                                                </div>
+                                                <a href="#"  class="link3">155 отзывов</a>
+                                                <div class="card__person-position with-icon">
+                                                    <i class="icon-ribbon"></i>
+                                                    <span>Учебно-оздоровительный центр «Здравница»</span>
+                                                </div>
+                                            </div>
+                                            <div class="raiting">
+                                                <div class="raiting__title">общий рейтинг</div>
+                                                <div class="raiting__value">98,5</div>
+                                            </div>
+                                            <div class="card3-list__feature-mob">
+                                                <div class="stars stars2">
+                                                    <span class="stars-active" style="width: 90%;"></span>
+                                                </div>
+                                                <a href="#"  class="link3">155 отзывов</a>
+                                            </div>
+                                            <div class="card3-list__btn">
+                                                <a href="#" class="btn btn-mini">
+                                                    Записаться на прием
+                                                    <span class="btn-shadow"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-mobe-hide js-mobe-hide">
+                        <div class="card3-list__item">
+                            <div class="banner">
+                                <div class="banner-holder">
+                                    <div class="banner-cont">
+                                        <div class="card3-list__img">
+                                            <a href="#" class="like like-2 js-like"></a>
+                                            <a href="#" class="card__img-holder"><img src="img/card2_img1.png" alt=""></a>
+                                        </div>
+                                        <a href="#" class="card3-list__psy">Николай Мальцев</a>
+                                        <div class="card3-list__info">
+                                            <div class="card3-list__info-holder">
+                                                <div class="card__feature">
+                                                    <div class="stars stars2">
+                                                        <span class="stars-active" style="width: 90%;"></span>
+                                                    </div>
+                                                    <a href="#"  class="link3">155 отзывов</a>
+                                                    <div class="card__person-position with-icon">
+                                                        <i class="icon-ribbon"></i>
+                                                        <span>Учебно-оздоровительный центр «Здравница»</span>
+                                                    </div>
+                                                </div>
+                                                <div class="raiting">
+                                                    <div class="raiting__title">общий рейтинг</div>
+                                                    <div class="raiting__value">98,5</div>
+                                                </div>
+                                                <div class="card3-list__feature-mob">
+                                                    <div class="stars stars2">
+                                                        <span class="stars-active" style="width: 90%;"></span>
+                                                    </div>
+                                                    <a href="#"  class="link3">155 отзывов</a>
+                                                </div>
+                                                <div class="card3-list__btn">
+                                                    <a href="#" class="btn btn-mini">
+                                                        Записаться на прием
+                                                        <span class="btn-shadow"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card3-list__item">
+                            <div class="banner">
+                                <div class="banner-holder">
+                                    <div class="banner-cont">
+                                        <div class="card3-list__img">
+                                            <a href="#" class="like like-2 js-like"></a>
+                                            <a href="#" class="card__img-holder"><img src="img/card2_img1.png" alt=""></a>
+                                        </div>
+                                        <a href="#" class="card3-list__psy">Николай Мальцев</a>
+                                        <div class="card3-list__info">
+                                            <div class="card3-list__info-holder">
+                                                <div class="card__feature">
+                                                    <div class="stars stars2">
+                                                        <span class="stars-active" style="width: 90%;"></span>
+                                                    </div>
+                                                    <a href="#"  class="link3">155 отзывов</a>
+                                                    <div class="card__person-position with-icon">
+                                                        <i class="icon-ribbon"></i>
+                                                        <span>Учебно-оздоровительный центр «Здравница»</span>
+                                                    </div>
+                                                </div>
+                                                <div class="raiting">
+                                                    <div class="raiting__title">общий рейтинг</div>
+                                                    <div class="raiting__value">98,5</div>
+                                                </div>
+                                                <div class="card3-list__feature-mob">
+                                                    <div class="stars stars2">
+                                                        <span class="stars-active" style="width: 90%;"></span>
+                                                    </div>
+                                                    <a href="#"  class="link3">155 отзывов</a>
+                                                </div>
+                                                <div class="card3-list__btn">
+                                                    <a href="#" class="btn btn-mini">
+                                                        Записаться на прием
+                                                        <span class="btn-shadow"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="link-more mob-show">
+                        <a href="#" class="link js-link-more">Показать еще</a>
+                    </div>
+                </div>
+                <ul class="pagination blog-pagination">
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">1</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">2</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link active">3</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">4</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">5</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">6</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="section-online section-online2">
+            <div class="wrapper">
+                <div class="online">
+                    <div class="online-cont clearfix">
+                        <div class="online-info">
+                            <div class="online-info__holder">
+                                <h2 class="with-decor">
+                                    <b>Бесплатный</b> <span class="nowrap">психолог-online</span>
+                                    <span class="decor-line2"></span>
+                                </h2>
+                                <div class="online-info__cont">
+                                    <div class="online-info__subtitle">Почему бесплатно?</div>
+                                    <div class="online-info__desc">Тут написать почему бесплатно и про всяких жуликов буквально несколько строчек, только самое важное выделить и расписать важность в двух словах</div>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="online-card">
+                            <div class="banner">
+                                <div class="banner-holder">
+                                    <div class="banner-cont">
+                                        <div class="card">
+                                            <div class="card-head">
+                                                <div class="card__img">
+                                                    <a href="#">
+                                                        <img src="img/card_img1.png?ver1.2" alt="">
+                                                    </a>
+                                                    <span class="status"></span>
+                                                    <span class="status status-off"></span>
+                                                </div>
+                                                <div class="card__person">
+                                                    <a href="#" class="card__person-name">Дмитрий Константинов </a>
+                                                    <div class="card__person-position">психолог онлайн</div>
+                                                </div>
+                                                <div class="card__feature">
+                                                    <div class="stars">
+                                                        <span class="stars-active" style="width: 90%;"></span>
+                                                    </div>
+                                                    <a href="#" class="link">32 отзыва</a>
+                                                </div>
+                                            </div>
+                                            <div class="card-list">
+                                                <div class="card-list__item">
+                                                    <div class="card-list__img img-1">
+                                                        <i class="icon-note"></i>
+                                                    </div>
+                                                    <div class="card-list__cont">
+                                                        <div class="card-list__title">Образование</div>
+                                                        <div class="card-list__desc">
+                                                            <p>Киевский национальный</p>
+                                                            <p>университет им.</p>
+                                                            <p>Т.Г. Шевченко.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-list__item">
+                                                    <div class="card-list__img img-2">
+                                                        <i class="img-plus"></i>
+                                                    </div>
+                                                    <div class="card-list__cont">
+                                                        <div class="card-list__title">Стаж работы</div>
+                                                        <div class="card-list__desc">
+                                                            <p>10 лет, в том числе</p>
+                                                            <p>7 лет частный</p>
+                                                            <p>психолог.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-list__item">
+                                                    <div class="card-list__img">
+                                                        <i class="icon-star"></i>
+                                                    </div>
+                                                    <div class="card-list__cont">
+                                                        <div class="card-list__title">Специализация</div>
+                                                        <div class="card-list__desc">
+                                                            <p>Психотерапия, </p>
+                                                            <p>психоанализ, </p>
+                                                            <p>депрессии, стрессы..</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="online-info">
+                            <div class="online-info__btn">
+                                <a href="#" class="btn">
+                                    Проконсультироваться
+                                    <span class="btn-shadow"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preview">
+                        <div class="preview__title">УЖЕ ПРОКОНСУЛЬТИРОВАЛИСЬ</div>
+                        <ul class="preview-list">
+                            <li class="preview-list__item"><a href="#"><img src="img/preview_img1.png?ver1.2" alt=""></a></li>
+                            <li class="preview-list__item"><a href="#"><img src="img/preview_img2.png?ver1.2" alt=""></a></li>
+                            <li class="preview-list__item"><a href="#"><img src="img/preview_img3.png?ver1.2" alt=""></a></li>
+                            <li class="preview-list__item"><a href="#"><img src="img/preview_img4.png?ver1.2" alt=""></a></li>
+                        </ul>
+                        <div class="preview__link">
+                            <a href="#" class="link2">+ ЕЩЁ 50</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- CONTENT EOF   -->
+
+    <!-- BEGIN HEADER -->
+
+        <header id="header" class=" panel">
+                <div class="box-header">
+                    <div class="header clearfix">
+                        <div class="h-logo">
+                            <a href="#" class="logo">
+                                <div class="logo__text">Psy</div>
+                                <div class="logo__overtext">поиск</div>
+                            </a>
+                        </div>
+                        <div class="h-select-city">
+                            <form action="#">
+                                <select class="select-narrow js-styled">
+                                    <option value="1" class="select-narrow__item">Москва</option>
+                                    <option value="2" class="select-narrow__item">Санкт-Петербург</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="h-menu">
+                            <nav class="menu">
+                                <ul class="menu__list">
+                                    <li class="menu__item"><a href="#" class="menu__link">Специалисты</a></li>
+                                    <li class="menu__item"><a href="#" class="menu__link">Клиники</a></li>
+                                    <li class="menu__item"><a href="#" class="menu__link">Статьи</a></li>
+                                    <li class="menu__item"><a href="#" class="menu__link">Вопросы</a></li>
+                                    <li class="menu__item"><a href="#" class="menu__link">Блоги</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        
+                        <div class="header-right">
+                           <div class="h-search-btn">
+                           <div class="h-search-form">                                
+                               <input type="text" name="s" class="h-search-form__input">
+                               <button class="h-search-form__btn"></button>
+                           </div>
+						  <a href="#" class="search-btn"></a>
+                        </div>
+                            <div class="h-add-doctor">
+                                <a href="#" class="add-person">
+                                    <div class="add-person__icon"></div>
+                                    <div class="add-person__text">Добавить <br>врача </div>
+                                </a>
+                            </div> 
+                            <div class="h-user-block">
+                                <div class="h-user-block__top">
+                                    <div class="h-user-block-photo u-online">
+                                        <img src="img/user-photo-01.png" alt="">
+                                    </div>
+                                    <div class="h-user-block-name">Антонина</div>
+                                </div>
+                                <ul class="h-user-block__links">
+                                    <li>
+                                        <a href="#">Пункт 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Пункт 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Пункт 3</a>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                            <a href="#" class="h-logout"></a>
+                        </div>
+                        
+                        <a href="#" class="btn-menu toggle-button"><span></span></a>
+                    </div>
+                </div>
+        </header>
+        
+    <!-- HEADER EOF   -->   
+
+    <!-- BEGIN FOOTER -->   
+        
+        <footer id="footer" class="panel">
+            <div class="wrapper wrapper-inner">
+                <div class="footer-blocks clearfix">
+                    <div class="footer-blocks__col">
+                        <a href="#" class="logo clearfix">
+                            <div class="logo__text">Psy</div>
+                            <div class="logo__overtext">поиск</div>
+                        </a>
+                        
+                        <div class="f-select-city">
+                            <form action="#">
+                                <select class="select-narrow js-styled">
+                                    <option value="1" class="select-narrow__item">Москва</option>
+                                    <option value="2" class="select-narrow__item">Санкт-Петербург</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="f-social">                    
+                            <a href="#" class="f-social__link f-social__link-1"></a>
+                            <a href="#" class="f-social__link f-social__link-2"></a>
+                            <a href="#" class="f-social__link f-social__link-3"></a>
+                            <a href="#" class="f-social__link f-social__link-4"></a>
+                            <span>—&nbsp;Читайте нас в соцсетях!</span>
+                        </div>
+                    </div>
+                    <div class="footer-blocks__col">
+                        <div class="f-links">
+                            <div class="f-links__title">Сервис</div>
+                            <ul class="f-links-list">
+                                <li class="f-links-list__item">
+                                    <a href="#" class="f-links-list__link">О нас</a>
+                                </li>
+                                <li class="f-links-list__item">
+                                    <a href="#" class="f-links-list__link">Пресса</a>
+                                </li>
+                                <li class="f-links-list__item">
+                                    <a href="#" class="f-links-list__link">Контакты</a>
+                                </li>
+                                <li class="f-links-list__item">
+                                    <a href="#" class="f-links-list__link">FAQ</a>
+                                </li>
+                                <li class="f-links-list__item">
+                                    <a href="#" class="f-links-list__link">Как пользоваться сервисом?</a>
+                                </li>
+                                <li class="f-links-list__item">
+                                    <a href="#" class="f-links-list__link">Пользовательское соглашение</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-blocks__col">
+                        <div class="f-links">
+                            <div class="f-links__title">Пациенту</div>
+                            <ul class="f-links-list">
+                                <li class="f-links-list__item">
+                                    <a href="#" class="f-links-list__link">Психологи</a>
+                                </li>
+                                <li class="f-links-list__item">
+                                    <a href="#" class="f-links-list__link">Медцентры</a>
+                                </li>
+                                <li class="f-links-list__item">
+                                    <a href="#" class="f-links-list__link">Психолог-онлайн</a>
+                                </li>
+                                <li class="f-links-list__item">
+                                    <a href="#" class="f-links-list__link">Бесплатный психолог</a>
+                                </li>
+                                <li class="f-links-list__item">
+                                    <a href="#" class="f-links-list__link">Статьи </a>
+                                </li>
+                                <li class="f-links-list__item">
+                                    <a href="#" class="f-links-list__link">Справочник заболеваний</a>
+                                </li>
+                                <li class="f-links-list__item">
+                                    <a href="#" class="f-links-list__link">Блоги</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-blocks__col">
+                        <div class="h-user-block f-user-block">
+                                <div class="h-user-block__top">
+                                    <!-- user online -->
+                                <div class="h-user-block-photo u-online">
+                                    <img src="img/user-photo-01.png" alt="">
+                                </div>
+                                 <!-- user offline -->
+                                <!--<div class="h-user-block-photo u-offline">
+                                    <img src="img/user-photo-01.png" alt="">
+                                </div>-->
+                                    <div class="h-user-block-name">Антонина</div>
+                                </div>
+                                <ul class="h-user-block__links">
+                                    <li>
+                                        <a href="#">Пункт 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Пункт 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Пункт 3</a>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        <div class="f-btn">
+                            <a href="#" class="btn btn-large">
+                                <span class="btn-text">Бесплатный психолог</span>
+                                <span class="btn-shadow"></span>
+                            </a>
+                         </div>
+                        <div class="f-links">
+                            <div class="f-links__title">Психологу и медцентрам</div>
+                            <ul class="f-links-list">
+                                <li class="f-links-list__item">
+                                    <a href="#" class="f-links-list__link f-link-login">Личный кабинет</a>
+                                </li>
+                                <li class="f-links-list__item">
+                                    <a href="#" class="f-links-list__link f-link-register">Регистрация</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="f-copy">2017, Psy-поиск</div>
+            </div>
+        </footer>
+        
+        
+    <!-- FOOTER EOF   -->
+
+</div>
+
+
+<div class="icon-load"></div>
+
+     <div id="menu" class="sidebar">
+         <div class="sidebar-menu-wrapper">
+           <div class="h-user-block">
+                <div class="h-user-block__top">
+                    <div class="h-user-block-photo u-online">
+                        <img src="img/user-photo-01.png" alt="">
+                    </div>
+                    <div class="h-user-block-name">Антонина</div>
+                </div>
+                <ul class="h-user-block__links">
+                    <li>
+                        <a href="#">Пункт 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Пункт 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Пункт 3</a>
+                    </li>
+                </ul>
+                            
+            </div>
+            <div class="h-menu">
+				<nav class="menu">
+					<ul class="menu__list">
+						<li class="menu__item"><a href="#" class="menu__link">Специалисты</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Клиники</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Статьи</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Вопросы</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Блоги</a></li>
+					</ul>
+				</nav>
+			</div>
+         <div class="h-search clearfix">
+            <button class="h-search__btn"></button>
+             <input type="text" name="s" class="h-search__input">
+         </div>
+         <div class="h-select-city">
+						<form action="#">
+							<select class="select-narrow js-styled">
+								<option value="1" class="select-narrow__item">Москва</option>
+								<option value="2" class="select-narrow__item">Санкт-Петербург</option>
+							</select>
+						</form>
+					</div>
+         
+         <div class="h-btn">
+            <a href="#" class="btn">
+
+                <span class="btn-text">Бесплатная консультация</span>
+                <span class="btn-shadow"></span>
+            </a>
+        </div>
+        
+        <div class="h-social social">
+            
+            <a href="#" class="social__link social__link-1"></a>
+            <a href="#" class="social__link social__link-2"></a>
+            <a href="#" class="social__link social__link-3"></a>
+            <a href="#" class="social__link social__link-4"></a>
+            <span>— Читайте нас в соцсетях!</span>
+        </div>
+        
+    </div>  
+
+
+ 
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js" ></script>
+<script type="text/javascript" src="js/components/jquery.formstyler.js"></script>
+<script type="text/javascript" src="js/components/mask.js"></script>
+<script type="text/javascript" src="js/components/jquery.fancybox-3.min.js" ></script>
+<script type="text/javascript" src="js/components/nouislider.min.js"></script>
+<script type="text/javascript" src="js/components/w.Numb.js"></script> 
+<script type="text/javascript" src="js/components/slideout.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>

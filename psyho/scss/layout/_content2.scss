@@ -1,0 +1,1431 @@
+.item-search-best:before{
+    height: 40px;
+}
+.search-form{
+    .control-icon{
+          z-index: 100;
+    }
+    .box-field-row {
+        text-align: left;
+    }
+}
+.account-form .box-field-row{
+    text-align: left;
+}
+
+.account-form{
+    .jq-selectbox__dropdown{
+        top: 115px;
+        border: 1px solid transparent;
+        box-shadow: -5px 8px 25px rgba(0, 0, 2, 0.08);
+        background: #fff;
+    }
+    .jq-selectbox li {        
+        padding: 10px 10px 10px 10px;       
+        font-size: 16px;
+    }
+    .jq-selectbox li.selected, .jq-selectbox li:hover {
+        background-color: #F5F5F5;
+        color: #000;
+    }
+    .jq-selectbox__select:hover {
+     background: #fff;
+    }
+    .jq-selectbox__select:active {
+        background:  #fff;
+    }
+    .jq-selectbox.focused .jq-selectbox__select {
+        background:  #fff;
+    }
+    .with-icon input, .with-icon .jq-selectbox__select {
+        padding-left: 93px;
+    }
+    .jq-selectbox__trigger{
+        width: 65px;
+    }
+    .jq-selectbox__trigger:before{
+        right: 46px;
+    }
+    .form-control_large, .select_large .jq-selectbox__select {
+        font-weight: 500;
+        height: 110px;
+    }
+    .select_large .jq-selectbox__select{
+        padding-top: 43px;
+    }
+}
+
+
+.page-account-user{
+     padding: 251px 0 364px;
+    .account-form .btn{
+        margin-top: 62px;
+    }
+    .content-columns-account .aside-right{
+        padding-top: 86px;
+    }
+    .card-psy-info-city{
+        font-size: 16px;
+        padding: 0 0 0 33px;
+        position: relative;
+        margin-top: 0px;
+            &:before{
+                content: "";
+                width: 12px;
+                height: 16px;
+                position: absolute;
+                top: 50%;
+                margin-top: -8px;
+                left: 0;
+                background: url('../img/icons.png') no-repeat -187px -18px;
+                background-size: 200px 200px;
+            }
+    }  
+    .card-psy-info-time{
+        font-size: 16px;
+        font-style: italic;
+        padding-top: 42px;
+        margin-left: -5px;
+        letter-spacing: 0.2px;
+    }
+    
+    .custom-radio{
+        display: inline-block;
+        padding-top: 28px;
+        margin-right: 60px;
+        padding-bottom: 19px;
+        input[type="radio"] {
+          display: none;
+        }
+
+        input[type="radio"] + label {
+          font-size: 19px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        input[type="radio"] + label span {
+          display: inline-block;
+          width: 25px;
+          height: 25px;
+          margin: -1px 27px 0 0;
+          vertical-align: middle;
+          cursor: pointer;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+            position: relative;
+             background:url('../img/icons.png') no-repeat 0 -74px;
+            background-size: 200px;
+            &:after{
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                content: "";
+                top:0;
+                left: 0;
+                opacity: 0;
+                background:url('../img/icons.png') no-repeat -25.5px -74px;
+                transition: all 0.25s;
+                 background-size: 200px;
+            }
+        }
+
+        input[type="radio"]:checked + label span:after {
+          opacity: 1;
+        }
+    }
+    .blog-links__account{
+        padding-bottom: 88px;
+    }
+    .box-field_column-user_select{
+        display: none;
+    }
+    .control-icon{
+        z-index: 100;
+    }
+}
+
+.control-icon{
+    .img-gender{
+        width: 25px;
+        height: 25px;
+        background:url('../img/icons.png') no-repeat -25.5px -74px;
+        background-size: 200px; 
+    }
+}
+
+/*page-register*/
+.page-register{
+    background:  url(../img/bg-blog-bottom.jpg) no-repeat center bottom, url(../img/bg-p1.jpg) no-repeat center top #fff;
+    padding: 251px 0 324px;
+    .title-inside{
+        text-align: center;
+            padding-left: 12px;
+    }
+    &-2{
+        padding: 251px 0 254px;
+        background:  url(../img/bg-blog-bottom.jpg) no-repeat center bottom, url(../img/bg-p2.jpg) no-repeat center top #fff;
+    }
+}
+.blog-links__register{
+   text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0 !important;
+    .blog-links-period__item {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .blog-links-period__link.active {
+        font-weight: bold;
+        padding: 10px 38px;
+    }
+}
+
+.register-form{
+    max-width: 1295px;
+    margin: 0 auto;
+    .account-form {
+        margin-top: 22px;
+    }
+    .btn {
+        margin: 0 auto;
+        display: block;
+    }
+    .box-field_column-input {
+        width: calc(100% - 395px);
+    }
+    .box-field-row_gender{
+         margin-top: -10px;
+        
+        .box-field_column-label{
+                padding: 32px 20px 33px 0;
+        }
+        .custom-radio{
+            margin-right: 80px;
+        }
+        .box-field_column-input{
+            padding-bottom: 20px;
+        }
+    }
+    .account-form .btn {
+           margin-top: 23px;
+    }
+    .box-field-row__register-work{
+            padding-top: 15px;
+            padding-bottom: 45px;
+        .box-field__input{
+            width:50%;
+            float: left;
+        }
+        .box-field__input_checkbox{
+            float: left;
+            width: 50%;
+            padding-left: 38px;
+            padding-top: 10px;
+        }
+    }
+    .custom-radio-checkbox{
+        margin-right: 0;
+    }
+    .form-text {        
+        padding-top: 62px;        
+        padding-left: 0px;
+        letter-spacing: 0.05px;        
+        margin-right: -20px;
+        margin-left: 4px;
+    }
+    .form-subtitle{
+           font-size: 27.5px;
+            font-weight: 500;
+            padding-top: 30px;
+            padding-bottom: 7px;
+    }
+}
+
+/*page-register-2*/
+
+.register-banner{
+    position: relative;
+    max-width: 1350px;
+       margin: 63px auto 125px;
+    z-index: 1;
+    padding-right: 25px;
+    .banner-holder{
+        padding: 0;
+    }
+    .banner-cont{
+        position: relative;
+    }
+    &__image-1{
+            position: absolute;
+            background: url('../img/bg-card-psy-left.png') no-repeat right top;
+            width: 328px;
+            height: 95px;
+            top: 119px;
+            left: -328px;
+        }
+        &__image-2{
+            position: absolute;
+            background: url('../img/bg-card-psy-right.png') no-repeat right top;
+            width: 567px;
+            height: 230px;
+            top: -45px;right: -354px;
+            z-index: 9;
+            
+        }
+    
+    &__image-3{
+        position: absolute;
+        bottom: 0;
+        left: 70px;
+        z-index: 99;
+        
+    }
+    &__image-4{
+        left: 80px;
+        
+    }
+    &-text{
+           padding: 78px 50px 70px 378px;
+        font-size: 22px;
+        line-height: 1.4;
+        z-index: 100;
+        position: relative;
+        &__title{
+            padding-bottom: 20px;
+            font-size: 32.5px;
+            position: relative;
+            b{
+                font-weight: 500;
+            }
+            img{               
+                vertical-align: middle;
+                margin-top: -5px;
+                display: inline-block;
+                    margin-left: 20px;
+            }
+        }
+    }
+    
+}
+  .custom-radio-checkbox{
+        display: inline-block;
+        padding-top: 28px;
+        margin-right: 60px;
+        padding-bottom: 19px;
+      
+        input[type="checkbox"] {
+          display: none;
+        }
+
+        input[type="checkbox"] + label {
+          font-size: 19px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"] + label span {
+          display: inline-block;
+          width: 25px;
+          height: 25px;
+          margin: -1px 35px 0 0;
+          vertical-align: middle;
+          cursor: pointer;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+            position: relative;
+             background:url('../img/icons.png') no-repeat 0 -74px;
+            background-size: 200px;
+            &:after{
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                content: "";
+                top:0;
+                left: 0;
+                opacity: 0;
+                background:url('../img/icons.png') no-repeat -25.5px -74px;
+                transition: all 0.25s;
+                 background-size: 200px;
+            }
+        }
+
+        input[type="checkbox"]:checked + label span:after {
+          opacity: 1;
+        }
+    }
+   
+.register-form-2{
+    max-width: 1310px;
+    margin: 0 auto;
+    padding-right: 0px;
+    padding-left: 15px;
+}
+
+
+/*page-sertification*/
+
+.card3-list-social{
+    padding-top: 0px;
+    padding-left: 0px;
+    max-width: 260px;
+    span{
+        font-size: 14px;
+        font-weight: 300;
+        font-style: italic;
+        padding: 13px 0 0 0;
+        letter-spacing: -0.25px;       
+    }
+    .social__link {
+        margin-right: 4px;
+    }
+}
+.card3-list .card-single-sert{
+    .banner:after {
+        box-shadow: -1px 1px 51px rgba(0, 0, 2, 0.08);
+    }
+    .card3-list__psy {
+        font-size: 27.5px;
+        line-height: 1.4;
+        letter-spacing: 0;
+        max-width: 1120px;
+        margin: -14px 0 24px;        
+    }
+    .raiting{
+        padding-left: 10px;
+    }
+    .raiting__value {
+        font-size: 67.5px;
+        margin: 10px 0 0 0px;
+    }
+    .btn {
+        font-size: 15.5px;  
+        margin-top: 5px;
+        letter-spacing: 0.8px;
+    }
+    .banner-holder {
+        padding: 40px 63px 22px 0;
+    } 
+}
+
+.btn-review{
+    position: relative;
+    .img-review{
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -1px;
+        background: url('../img/icons.png') no-repeat -126px -79px;
+        background-size: 200px 200px;
+        width: 18px;
+        height: 15px;
+        margin-right: 12px;
+        margin-left: -8px;
+    }
+}
+
+.page-card-psy .psy-info_sert {
+    padding-top: 23px;
+    padding-bottom: 65px;
+}
+.psy-info_sert{
+    .icon-address{
+        width: 20px;
+        display: block;
+        height: 29px;
+        background: url('../img/icons.png') no-repeat -172px -48px;
+        background-size: 200px 200px;
+    }
+    .icon-schedule{
+        width: 26px;
+        display: block;
+        height: 27px;
+        background: url('../img/icons.png') no-repeat -172px -79px;
+        background-size: 200px 200px;
+    }
+    .psy-info__title a{
+        font-size: 19px;
+            font-weight: normal;
+            color: #216f8f;
+            border-bottom: 1px solid #97bbca;
+            margin-left: 20px;
+            &:hover{
+                border-color: transparent;
+            }
+    }
+    .psy-info__metro{
+        position: relative;
+        padding-left: 35px;
+        font-size: 16px;
+        margin-top: 26px;
+            &:before{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: url('../img/icons.png') no-repeat -35px -59px;
+                    background-size: 200px 200px;
+                    width: 20px;
+                    height: 14px;
+                    content: "";
+                }
+            }
+    .psy-info__desc i{
+        font-weight:400;
+        display: inline-block;
+    }
+    .psy-info__phone{
+        font-size: 19px;
+        font-weight: 400;
+         color: inherit;
+        font-style: italic;
+        margin-right: 7px;
+        white-space: nowrap;
+    }
+    .psy-info__email{
+        color: inherit;
+        border-bottom: 1px solid transparent;
+        &:hover{
+            border-bottom-color: #000;
+        }
+    }
+    .psy-info__site{
+            margin-top: 20px;
+            padding-left: 30px;
+            margin-left: 5px;
+        position: relative;
+        &:before{
+            position: absolute;
+            background: url('../img/icons.png') no-repeat -156px -79px;
+            background-size: 200px 200px;
+            left: 0;
+            top: 50%;
+            width: 15px;
+            height: 14px;
+            content: "";
+               margin-top: -9px;
+        }
+        a{
+            font-size: 17.5px;
+            font-weight: normal;
+            color: #216f8f;
+            border-bottom: 1px solid #97bbca;
+            display: inline-block;
+            padding-bottom: 4px;
+            &:hover{
+                border-color: transparent;
+            }
+        }
+        
+    }
+    .psy-info__col:nth-child(2) {
+        padding-left: 85px;
+        
+    }
+    .psy-info__desc{
+            margin-right: -70px;
+        }
+}
+.page-card-sert{
+    .article-text__title {
+        font-size: 30px;
+    }
+    .article-text p{
+        padding-top: 10px;
+        max-width: 1130px;
+    }
+}
+.sert-sertificates{
+        margin: 0px -40px 58px;
+    position: relative;
+    z-index: 1;
+    &__col{
+        width: 33.33%;
+        float: left;
+        padding: 0 40px;
+        &:nth-child(2){
+            .sert-sertificate__info{
+                margin: 0 -60px 0 60px;
+            }
+        }
+        &:nth-child(3){
+            .sert-sertificate__info{
+                margin: 0 -60px 0 60px;
+            }
+        }
+    }
+    .sert-sertificate{
+        position: relative;
+        padding-top: 18px;
+        padding-bottom: 10px;
+         .banner-holder {
+            padding: 24px 30px 20px;
+        }
+        &__info{
+            padding-top: 85px;
+            p{
+                font-size: 18px;
+                font-weight: 300;
+                padding: 21px 0 18px 0;
+                line-height: 1.6;
+                    letter-spacing: 0.9px;
+            }
+            a{
+                font-size: 17.5px;
+                font-weight: 400;
+                color: #216f8f;
+                border-bottom: 1px solid #97bbca;
+                padding-bottom: 5px;
+                &:hover{
+                    border-color: transparent;
+                }
+            }
+        }
+        &__title{
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+        }
+    }
+}
+.sert-psy-slider2{
+    z-index: 1;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 80px;
+    
+    .custom-slider {
+        margin-left: -158px;
+        .owl-item{
+            padding-top: 20px;
+        }
+        .btn{
+            font-size: 12.5px;
+            width: 100%;
+            max-width: 240px;
+                margin-top: -8px;
+                margin-bottom: 30px;
+        }
+    }
+}
+.article-text{
+    .title-button {
+        .article-text__title{
+            float: left;
+            font-size: 32.5px;
+        }
+        .btn-red{
+                margin-right: 0px;
+                margin-top: 43px;
+            line-height: 40px;
+        }
+    }
+}
+.sert-psy-slider2-title{
+        margin-top: 38px;
+}
+
+.psy-info__m{
+    display: none;
+}
+
+.psy-info__link{
+    font-size: 16px;
+    color: #216f8f;
+    border-bottom: 1px solid #97bbca;
+    padding-bottom: 4px;
+    &:hover{
+        border-color: transparent;
+    }
+}
+
+.card3-list__social-mobile{
+    display: none;
+}
+
+.page-card-psy .psy-map_center{
+    height: 422px;
+    margin-top: 45px;
+    margin-bottom: 50px;
+    [class^="ymaps_https___api_maps_yandex_ru_2_1_55_"], [class*="ymaps_https___api_maps_yandex_ru_2_1_55_"] {
+          background-image: url(../img/map-marker-2.png) !important;
+          background-size: 158px 187px !important;
+          width: 158px !important;
+          height: 187px !important;
+        }
+}
+ 
+.card-single-sert{
+    position: relative;
+}
+.card3-list .card-single-sert-2 .card3-list__psy {
+    font-size: 30px;
+    
+    margin: 6px 0 24px;
+}
+
+.card3-list.card3-list_psy-center{
+    .card3-list__img{
+        line-height: 200px;
+        img{
+            vertical-align: middle;
+        }        
+    }
+}
+
+.section-search-psycenter{
+    .title-block__main-title{
+        margin-right: 6px;
+    }
+    .section-content{
+        padding-top: 29px;
+    }
+    .filter-form__filter-name{
+        display: inline-block;
+        width: auto;
+        font-size: 17px;
+    }
+    .filter-form__input-wrap{
+        display: inline-block;
+        vertical-align: middle;
+            padding-left: 10px;
+    }
+    .filter-form__item{
+        margin-right: 66px;
+    }
+    .filter-form__input {
+        height: 45px;
+        width: 85px;
+    
+    }
+    .filter-form__value-block {
+        padding: 0 42px 0 0;
+        margin-right: 2px;
+    }
+    .filter-form__item.item-12{
+              margin-right: 13px;
+        .filter-form__value-block{
+            padding-top: 3px;
+        }
+    }
+    .filter-form__item.item-13{
+        margin-right: 30px;
+        
+        .filter-form__input-wrap{
+            padding-left: 0;   
+        }
+        .filter-form__filter-select{
+            margin-left: 9px;
+        }
+        .filter-form__value-block label:nth-child(2) .filter-form__separate-text{
+            margin: 0 5px;
+        }
+    }
+    .filter-form__item.item-14{
+        margin-top: -13px;
+        .filter-form__check-text{
+            font-size: 16px;
+                padding-left: 10px;
+        }
+    }
+   
+}
+
+.section-map-psycenter{
+   margin-bottom: -30px;
+    #map{
+        height: 430px;
+    }
+}
+
+.card3-list.card3-list_psy-center2{
+     .card3-list__psy {
+        font-size: 30.5px;
+        
+        max-width: 1100px;
+        margin-bottom: 25px;
+        margin-top: 6px;
+    }
+    .card__person-position{
+        margin-top: 12px;   
+    }
+    .raiting__value {
+            font-size: 67px;
+            margin: 0 0 0 0px;
+        }
+     .card3-list__img {
+           line-height: 150px;
+    }
+     .banner-holder {
+        padding: 40px 63px 22px 0;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .aside-links_border{
+        padding: 30px 40px;
+    }
+    .page-account-user{
+        padding-bottom: 224px;
+    }
+    .psy-info_sert .psy-info__col{
+        padding-right: 20px;
+        padding-left: 0 !important;
+    }
+    .psy-info_sert .psy-info__desc{
+        margin-right: 0;
+    }
+    .sert-sertificates__col .sert-sertificate__info{
+        margin: 0 !important;
+    }    
+}
+@media screen and (max-width: 1400px) {
+    /*.page-account {
+        padding: 150px 0 150px;
+    }*/
+    /*page-register*/      
+    .page-register .title-inside{
+        padding-left: 0;
+    }
+    .blog-links__register{
+        padding-right: 0;
+    }
+    
+    .page-account {
+        padding: 150px 0 150px;
+    }
+    
+}
+@media screen and (max-width: 1300px) {
+    .card3-list.card3-list_psy-center2 .card3-list__psy {
+        font-size: 21px;
+        max-width: 1100px;
+        margin-bottom: 25px;
+        margin-top: 0px;
+    }
+    .card3-list.card3-list_psy-center2 .raiting__value{
+        font-size: 64px;
+    }
+    .card3-list.card3-list_psy-center2 .raiting__title{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .page-account {
+        padding: 150px 0 100px;
+    }
+    .page-account-user .blog-links__account{
+        padding-bottom: 40px;
+    }
+    .page-account-user .content-columns-account .aside-right {
+        padding-top: 40px;
+    }
+    /*page-register*/
+    
+    .page-register{
+        .account-form .box-field_column-label {
+            width: 190px;
+            text-align: right;
+            padding: 40px 20px 33px 0;
+        }
+        .box-field_column-input {
+            width: calc(100% - 350px);
+            padding-bottom: 33px;
+        }
+    }
+    .register-banner__image-3
+    {
+        left: 30px;
+    }
+    .register-banner-text {
+        padding: 78px 40px 70px 330px;
+    }
+    .register-banner-text__title img{
+        margin-left: 5px;
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+    .section-search-psycenter .filter-form__item {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .page-account {
+    padding: 120px 0 100px;
+}
+    .page-account-user .blog-links__account{
+        padding-bottom: 0px;    
+        }
+    .blog-links-mobile_full{
+        margin: 0;
+    }
+    .page-account-user .account-form .btn{
+        margin-top: 18px;
+    }
+    /*page-register*/
+    .page-register .title-inside {
+        text-align: left;
+        padding-left: 0;
+    }
+    .page-register{
+        .account-form .box-field_column-label {
+            width: 100%;
+            text-align: left;
+            padding: 40px 20px 15px 15px;
+        }
+        .account-form .box-field_column-input {
+            padding-bottom: 13px;
+            width: 100%;
+        }
+        
+    }
+    .blog-links__register{
+        text-align: left;
+    }
+    .register-form .box-field-row__register-work .box-field__input_checkbox{
+        padding-left: 28px;
+    }
+    .register-banner-text {
+        padding: 30px 30px 30px 330px;
+        font-size: 20px;
+    }
+    .register-banner-text__title{
+        font-size: 28px;
+    }
+    .register-banner{
+        margin-bottom: 40px;
+    }
+    .psy-info_sert .psy-info__metro{
+        font-size: 14px;
+    }
+    .psy-info_sert .psy-info__phone{
+        font-size: 17px;
+    }
+    .psy-info_sert .psy-info__site a{
+        font-size: 16px;
+    }
+    .psy-info_sert .psy-info__title a{
+        font-size: 18px;
+    }
+
+    .card3-list .card-single-sert .raiting {
+        padding-left: 0px;
+    }
+    
+    /*.page-card-psy .psy-map_center{
+        [class^="ymaps_https___api_maps_yandex_ru_2_1_55_"], [class*="ymaps_https___api_maps_yandex_ru_2_1_55_"] {
+              background-image: url(../img/map-marker-2.png) !important;
+              background-size: 85px 100px !important;
+              width: 85px !important;
+              height: 100px !important;
+            }
+    }*/
+    .page-account {
+        background:  url(../img/bg-p2.jpg) no-repeat center top #fff;
+   
+    }
+    
+    .register-form .account-form .box-field-row{
+        margin: 0;
+    }
+    .blog-links__register .blog-links-period__link.active{
+        padding: 5px 15px;
+    }
+    .blog-links__register .blog-links-period__item{
+        padding: 0;
+    }
+    .page-register .account-form .box-field_column-label{
+        padding-left: 0;
+    }
+    
+}
+
+@media screen and (max-width: 850px){
+
+    .card3-list  .card-single-sert .banner-holder {
+        padding: 30px 35px 20px 35px;
+    }
+    .card3-list .card-single-sert .card3-list__psy {       
+        padding: 0;
+        font-size: 18px;
+        margin: 0;
+    }
+   .card3-list.card3-list_psy-center2  .banner-holder {
+            padding: 30px 35px 20px 35px;
+    }
+    .card3-list.card3-list_psy-center2 .card3-list__psy .card3-list__psy{
+        font-size: 18px;
+    }
+    .card3-list.card3-list_psy-center2 .card3-list__psy{
+        margin: 0;
+        font-size: 18px;
+    }
+    .card3-list.card3-list_psy-center2 .card3-list__img{
+        line-height: inherit;        
+    }
+    
+}
+
+
+@media screen and (max-width: 767px){
+    .page-account-user .box-field_column-user_radio{
+        display: none;
+    }
+    .page-account-user .box-field_column-user_select{
+        display: block;
+        padding-bottom: 8px;
+        
+    }
+    .page-account-user .account-form .select .jq-selectbox__select {
+        padding-left: 54px;
+        font-style: normal;
+        font-weight: 500;
+        padding-top: 32px;
+        font-size: 16.5px;
+    }
+    .account-form .select .jq-selectbox__dropdown{
+        top: 82px;
+    }
+    .page-account-user .account-form .btn{
+        margin-top: -25px;
+    }
+    .page-account-user {
+        padding-bottom: 50px;
+    }
+    .page-account-user {
+        .account-form {
+           margin-top: 29px;
+        }
+        .account-form .box-field_column-label {           
+           padding: 25px 20px 20px 0px;          
+        }
+    }
+    .control-icon .img-gender{
+        transform: scale(0.8);
+    }
+    /*page-register*/
+    .page-register{
+        background: none;
+        .account-form {
+            margin-top: 0px;
+        }
+        .box-field-row_gender {
+            margin-top: -2px;
+            margin-bottom: 15px;
+        }
+        .account-form .btn {
+            margin-top: -30px;
+        }
+    }
+    .register-banner-text {
+        padding: 30px 130px 26px 30px;
+        font-size: 16px;
+        line-height: 1.5;
+        min-height: 200px;
+        max-width: 500px;
+    }
+    .register-banner__image-3 {
+        left: auto;
+        right: -45px;
+        top: 0px;
+    }
+    .register-banner .banner-cont{
+        overflow: hidden;
+        border-radius: 5px;
+    }
+    .register-banner-text__title img {
+           margin-left: 5px;
+        position: absolute;
+        right: -118px;
+        top: 50%;
+        margin-top: -21px;
+        width: 100px;
+    }
+    .register-form .box-field-row__register-work .box-field__input{
+        width: 100%;
+    }
+    .register-form .box-field-row__register-work .box-field__input_checkbox{
+        width: 100%;
+        padding-left: 0;
+    }
+    .register-banner-text__title {
+        font-size: 23px;
+        line-height: 1.35;
+        padding-bottom: 18px;
+    }
+   .register-banner {
+        margin-top: 57px;
+        margin-bottom: 31px;
+    }
+    .register-form .box-field-row__register-work {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .custom-radio-checkbox input[type="checkbox"] + label {
+        font-size: 16.5px;
+    }
+    .custom-radio-checkbox input[type="checkbox"] + label span{
+        transform: scale(0.8);
+        
+        margin-right: 9px;
+    }
+    .register-form .custom-radio-checkbox{
+        padding-top: 8px;
+        padding-bottom: 0;
+    }
+    .register-form .form-text {
+        padding-top: 42px;
+        padding-left: 0px;
+        margin-right: 15px;
+        margin-left: 0px;
+    }
+   .register-form .form-subtitle {
+        font-size: 23px;
+        padding-top: 0;
+        margin-top: -15px;
+        letter-spacing: 0.3px;
+        line-height: 1.2;
+        padding-bottom: 0px;
+    }
+    .register-banner{
+        padding-right: 10px;
+    }
+    .psy-info_sert .psy-info__col {       
+       padding-right: 0px;
+        padding-left: 40px !important;
+        width: 100%;
+        padding-bottom: 14px;
+        position: relative;
+        margin-bottom: 12px;
+    }
+    .psy-info_sert .psy-info__img {
+        margin-bottom: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .psy-info_sert .psy-info__title a{
+       display: none;
+    }
+    .psy-info__m{
+        display: inline-block;
+            margin: 19px 0 0 -2px;
+    }
+    .page-card-sert .article-text__title{
+        font-size: 28px;
+    }
+    .article-text .title-button .article-text__title{
+        font-size: 28px;
+    }
+    .article-text .title-button .btn-red{
+        margin-top: 13px;
+    }
+    .sert-sertificates__col{
+        padding: 0 30px;
+    }
+    .sert-sertificates{
+        margin-left: -30px;
+        margin-right: -30px;
+        margin-top: 20px;
+            margin-bottom: 39px;
+        .sert-sertificate {
+            padding-right: 10px;
+        }
+        .sert-sertificate__info {
+            padding-top: 64px;
+            padding-left: 8px;
+            margin-right: -10px !important;
+        }
+    }
+    .page-card-psy .psy-info_sert {
+        padding-top: 23px;
+            padding-bottom: 12px;
+        
+       .psy-info__title {
+            margin-bottom: 10px;
+            padding-top: 5px;
+        }
+        .psy-info__desc {
+            margin-right: 0;
+            line-height: 1.4;
+            letter-spacing: -0.2px;
+        }
+         .psy-info__metro {
+            font-size: 16px;
+            margin-top: 19px;
+            padding-left: 30px;
+        }
+        .psy-info__phone {
+            font-size: 14px;
+            margin-right: 13px;
+            font-style: normal;
+        }
+        .psy-info_sert .psy-info__site {
+            margin-top: 17px;
+            padding-left: 24px;
+            margin-left: 5px;
+            position: relative;
+        }
+    }
+    .sert-sertificates .sert-sertificate__info p{
+        line-height: 1.5;
+    }
+    .sert-psy-slider2-title {
+        margin-top: -12px;
+    }
+    .sert-psy-slider2{
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+
+    .sert-psy-slider2-scroll{
+            margin-top: -36px;
+        padding-bottom: 39px;
+    }
+
+    .blog-links__register .blog-links-period__item {
+      padding-right: 0;
+      padding-left: 0;
+  }
+  .box-field-row {
+      margin-left: 0;
+      margin-right: 0
+  }
+    .account-form .box-field_column{
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-right: 0
+    }
+    .account-form .box-field-row:last-child .box-field_column-label{
+            padding-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+  .custom-select-red .jq-selectbox__dropdown li:last-child {
+        border-radius: 0 0 15px 15px;
+    }  
+    .page-account-user {
+        padding-top: 85px;
+        padding-bottom: 50px;
+    }
+    .page-account-user .blog-links__account {
+        margin-top: 2px;
+            margin-bottom: 35px;
+    }
+    .page-account-user .card-psy-name {
+        padding-top: 28px;
+    }
+    .page-account-user .card-psy-info-city {
+        font-size: 14px;
+        padding: 0 0 0 18px
+    }
+     .page-account-user .card-psy-info-city:before {        
+        width: 8px;
+        height: 12px;       
+        top: 50%;
+        margin-top: -6px;
+        left: 0;
+        background: url(../img/icons.png) no-repeat -191px 0;
+        background-size: 200px 200px;
+    }
+    .page-account-user .card-psy-info-time {
+        font-size: 15px;
+        font-style: italic;
+        padding-top: 0px;
+        margin-top: -3px;
+        margin-left: 3px;
+        letter-spacing: -0.1px;
+    }
+    .page-account-user .card-psy .banner-holder {
+        padding: 22px 23px 38px;
+    }
+    /*page-register*/
+    
+    .page-register .blog-links__account {
+        margin-top: 6px;
+    }
+    .page-register {
+        .account-form .btn {
+          letter-spacing: 0;
+        }
+    }
+    .register-banner__image-2 {
+        width: 400px;
+        height: 230px;
+        background-size: contain;
+        top: -31px;
+        right: -266px;
+    }
+    .register-banner__image-1 {
+        width: 220px;
+        height: 95px;
+        top: 20px;
+        left: -100px;
+    }
+    
+    .register-banner-text{
+        max-width: 400px;
+    }
+    .register-banner-text__title img{
+        right: -50px;
+    }
+    .register-banner__image-3{
+        top: 60px;
+    }
+    
+
+    .page-card-sert .article-text__title{
+        font-size: 25px;
+    }
+    .article-text .title-button .article-text__title{
+        font-size: 25px;
+    }
+    .article-text .title-button .btn-red{
+        line-height: 32px;
+    }
+    .page-card-sert{
+            padding: 137px 0 50px;
+    }
+    
+    .psy-info_sert .psy-info__img.img-3 {
+        top: 0;
+        left: 1px;
+        font-size: 25px;
+    }
+    .page-card-sert  .article-text .title-button .btn-red-add:before{
+        display: none;
+    }
+    .page-account{
+        background: none;
+    }
+
+    .page-account {
+        padding-top: 85px;
+    }
+}
+@media screen and (max-width: 550px){
+    .page-account-user .account-form .box-field_column-label{
+        padding-left: 0;
+    }
+  
+    .sert-psy-slider2 .custom-slider {
+        margin-left: 0;
+    }
+    .card__feature .card3-list-social{
+        display: none;
+    }
+    .card3-list__social-mobile{
+        display: block;        
+        margin-top: 38px;
+    }
+    .card3-list .card-single-sert .banner-holder {
+        padding: 35px 13px 44px 27px;
+    }
+    .card3-list .card-single-sert .raiting__value {
+        font-size: 52px;
+        margin: 8px 0 0 0px;
+    }
+    .card3-list .card-single-sert .raiting {
+        padding-left: 0px;
+        margin-bottom: 8px;
+    }
+    
+    .card3-list .card-single-sert .card3-list__btn {
+        clear: both;
+        padding-top: 18px;
+    }
+    .card3-list .card-single-sert .btn {
+        font-size: 16.5px;
+        letter-spacing: 0px;
+    }
+    .btn-review .img-review {       
+        margin-right: 10px;
+        margin-left: -6px;
+    }
+    .card3-list .card3-list__item.card-single-sert {
+        margin-bottom: 0px;
+    }
+    
+    .sert-psy-slider2{
+            margin-bottom: 0px;
+        .card2 {
+            padding: 0 5px 0 5px;
+        }
+        .card2 .banner-holder {
+               padding: 33px 14px 26px 14px !important;
+        }
+        .card2 .card__feature {
+            margin: 0 0 35px 0px;
+            position: relative;
+                padding: 0px 0 0 10px;
+            a{
+                display: block;
+                font-size: 14px;
+                color: #000;
+            }
+            .stars{
+                float: none;
+            }
+        }
+        .card__person-position.with-icon span{
+            max-width: 70%;
+        }
+        .custom-slider .btn {
+            font-size: 16.5px;
+            width: 100%;
+            max-width: 290px;
+            margin-top: 23px;
+              margin-bottom: 18px;
+        }
+
+    }
+    .card3-list.card3-list_psy-center2 .raiting__value{
+        font-size: 52px;
+    }
+    .card3-list.card3-list_psy-center2  .banner-holder {
+             padding: 40px 17px 30px 27px;
+    }
+    .card3-list.card3-list_psy-center2 .raiting__title{
+        font-size: 14px;
+    }
+    
+    .register-form .account-form .box-field-row{
+        margin: 0;
+    }
+
+}
+@media screen and (max-width: 479px) {
+    .register-banner__image-3{
+        top: 110px;
+    }
+    .register-banner-text__title img{
+        right: -103px;
+    }
+    .register-banner__image-4{
+        top: 102px;
+    }
+    .register-form .form-subtitle {       
+        max-width: 250px;      
+    }
+}
+@media screen and (max-width: 374px) {
+    /*page-register*/
+    
+    .register-banner-text__title{
+        font-size: 19px;
+    }
+    .register-banner-text {
+        padding: 20px 110px 26px 10px;
+        font-size: 15px;
+    }
+    .register-banner-text__title img {
+        right: -90px;
+    }
+    .card3-list .card-single-sert .banner-holder{
+        padding-left: 15px;
+    }
+}
