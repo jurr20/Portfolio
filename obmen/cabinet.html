@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+	<title>Личный кабинет</title>
+	<meta name='description' content="" />
+	<meta name="keywords" content="" />
+	<link rel="icon" type="image/x-icon" href="" />
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css?ver1.2" />	
+	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css?ver1.2" />	
+	<link rel="stylesheet" type="text/css" href="css/style.css?ver1.2" />	
+</head>
+<body class="loaded">
+
+							
+<!-- BEGIN BODY -->
+
+<div class="main-wrapper cabinet-page">
+
+<!-- BEGIN CONTENT -->
+	<div id="particles-js"  class="overlay"></div>
+	<div class="drop-overlay"></div>
+	<div class="heading inverse">
+		<div class="wrapper">
+			<div class="heading-holder">
+				<h1>Личный кабинет</h1>
+				<div class="user-info">
+					<span class="user-info__name">
+						Здравствуйте, <span class="js-user-name">Иван Иванов</span> 
+					</span>
+					<div class="user-info__photo">
+						<img src="img/fake-photo.png?ver1.2" alt="">
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	<main class="content">
+		<div class="wrapper">
+			<div class="content-holder have-tabs trio">
+				<aside>
+					<div class="aside-menu">
+						<a href="#" class="button-nav button-nav_aside js-button-aside">
+							<span class="button-nav__cont">
+								<span class="line"></span>
+								<span class="line"></span>
+								<span class="line"></span>
+							</span>
+						</a>
+						<ul class="aside-menu__list">
+							<li class="aside-menu__item aside-menu__item-mob js-mob-active"><a class="aside-menu__link link-info active">Мои данные</a></li>
+							<li>
+								<ul class="aside-menu-mob">
+									<li class="aside-menu__item"><a href="#" data-href="tab_1" data-size="small" class="aside-menu__link js-link-tab link-info active">Мои данные </a></li>
+									<li class="aside-menu__item"><a href="#" data-href="tab_2" data-size="small" class="aside-menu__link js-link-tab link-purse">Мои кошельки</a></li>
+									<li class="aside-menu__item"><a href="#" data-href="tab_3" data-size="big" class="aside-menu__link js-link-tab link-history">История обмена</a></li>
+									<li class="aside-menu__item"><a href="#" data-href="tab_4" data-size="small" class="aside-menu__link js-link-tab link-program">Партнерская программа</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="relative">
+						<div class="identif tab_1 tab_2">
+							<div class="identif__title">Как идентифицировать аккаунт?</div>
+							<div class="identif__subtitle">Для прохождения идентификации необходимо:</div>
+							<ul class="identif-list">
+								<li class="identif-list__item">
+									<span class="identif-list__num">/01</span>
+									Зайти в личный кабинет, нажать кнопку редактировать и заполнить все поля в профиле.
+								</li>
+								<li class="identif-list__item">
+									<span class="identif-list__num">/02</span>
+									После вам станет доступна кнопка загрузки документов.
+								</li>
+								<li class="identif-list__item">
+									<span class="identif-list__num">/03</span>
+									Загрузите копию паспорта (и карты если в идентификации участвует обмен на банковскую систему).
+								</li>
+							</ul>
+						</div>
+						<div class="partner-program tab_4 hide">
+							<div class="partner-program__item">
+								<div class="partner-program__title">Партнерская программа - это</div>
+								<div class="partner-program__info">Форма делового сотрудничества между продавцом и партнёрами, при продаже какого-либо товара или предоставления услуг.</div>
+							</div>
+							<div class="partner-program__item">
+								<div class="partner-program__title">Партнерская программа - это</div>
+								<div class="partner-program__info">Какой-то информационный текст.</div>
+							</div>
+							<div class="partner-program__item">
+								<div class="partner-program__title">Партнерская программа - это</div>
+								<div class="partner-program__info">Форма делового сотрудничества между продавцом и партнёрами, при продаже какого-либо товара или предоставления услуг.</div>
+							</div>
+						</div>
+						<div class="tab_3"></div>
+					</div>
+				</aside>
+				<div class="main-cont clearfix">
+					<div class="box-tab-cont js-tabs">
+					
+						<!--            tab 1            -->
+                		<div class="tab-cont tab_1">
+                			<div class="main-cont-tab outline">
+								<div class="block-form">
+									<div class="form-heading">
+										<div class="form-heading__photo">
+											<img src="img/fake-photo.png?ver1.2" alt="">
+										</div>
+										<div class="form-heading__upload-holder">
+											<form>
+												<input type="file">
+												<span class="form-heading__upload">Изменить фото</span>
+											</form>
+										</div>
+									</div>
+									<form>
+										<div class="block-field">
+											<label for="last-name" class="block-field__label">Фамилия:</label>
+											<input type="text" class="block-field__control" value="Иванов" id="last-name">
+										</div>
+										<div class="block-field">
+											<label for="first-name" class="block-field__label">Имя:</label>
+											<input type="text" class="block-field__control" value="Иван" id="first-name">
+										</div>
+										<div class="block-field">
+											<label for="patronymic" class="block-field__label label-mini">Отчество:</label>
+											<input type="text" class="block-field__control" id="patronymic">
+										</div>
+										<div class="block-field">
+											<label for="birth-day" class="block-field__label label-mini">Дата рождения:</label>
+											<input type="text" class="block-field__control" id="birth-day">
+										</div>
+										<div class="block-field">
+											<label for="passport" class="block-field__label label-mini">Номер паспорта:</label>
+											<input type="text" class="block-field__control" id="passport">
+										</div>
+										<div class="block-field">
+											<label for="tel" class="block-field__label label-mini">Мобильный телефон:</label>
+											<input type="tel" class="block-field__control" id="tel">
+										</div>
+										<div class="block-field">
+											<label for="mail" class="block-field__label label-mini">Электронная почта:</label>
+											<input type="email" class="block-field__control" id="mail">
+										</div>
+										<div class="block-field__btn">
+											<input type="submit" class="btn btn-large" value="Сохранить">
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="aside-2">
+								<ul class="edits">
+									<li class="edits__item">
+										<a href="#" class="edits__link active">Редактировать</a>
+									</li>
+									<li class="edits__item">
+										<a href="#" class="edits__link">Изменить пароль</a>
+									</li>
+									<li class="edits__item">
+										<a href="#" class="edits__link">Добавить документ</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!--            tab 2            -->
+						<div class="tab-cont hide tab_2">
+							<div class="main-cont-tab outline">
+								<div class="accordion">
+									<div class="accordion__item">
+										<div class="accordion-name js-accordion-name">
+											<span class="accordion-name__icon1"></span>
+											Advcash USD
+											<span class="accordion-name__icon2">
+												<i class="icon-plus close"></i>
+												<i class="icon-cross open"></i>
+											</span>
+										</div>
+										<div class="accordion-cont js-accordion-cont">
+											<div class="block-form mini">
+												<form>
+													<div class="block-field">
+														<label for="purse-name1" class="block-field__label">Название:</label>
+														<input type="text" class="block-field__control" id="purse-name1">
+													</div>
+													<div class="js-purse-holder">
+														<div class="block-field ">
+															<label class="block-field__label">Кошелек:</label>
+															<input type="text" class="block-field__control">
+														</div>
+													</div>
+													<div class="block-field select-mini">
+														<label for="valuta1" class="block-field__label block-field__label_style">Валюта:</label>
+														<select id="valuta1">
+															<option value="RUR">RUR</option>
+															<option value="RUR">2RUR</option>
+														</select>
+													</div>
+													<div class="block-field__btn">
+														<input type="submit" class="btn btn-large js-add-purse" value="Добавить кошелек">
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+									
+									<div class="accordion__item">
+										<div class="accordion-name js-accordion-name">
+											<span class="accordion-name__icon1"></span>
+											Advcash RUR
+											<span class="accordion-name__icon2">
+												<i class="icon-plus close"></i>
+												<i class="icon-cross open"></i>
+											</span>
+										</div>
+										<div class="accordion-cont js-accordion-cont">
+											<div class="block-form mini">
+												<form>
+													<div class="block-field">
+														<label for="purse-name2" class="block-field__label">Название:</label>
+														<input type="text" class="block-field__control" id="purse-name2">
+													</div>
+													<div class="js-purse-holder">
+														<div class="block-field ">
+															<label class="block-field__label">Кошелек:</label>
+															<input type="text" class="block-field__control">
+														</div>
+													</div>
+													<div class="block-field select-mini">
+														<label for="valuta2" class="block-field__label block-field__label_style">Валюта:</label>
+														<select id="valuta2">
+															<option value="RUR">RUR</option>
+															<option value="RUR">2RUR</option>
+														</select>
+													</div>
+													<div class="block-field__btn">
+														<input type="submit" class="btn btn-large js-add-purse" value="Добавить кошелек">
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+									
+									<div class="accordion__item">
+										<div class="accordion-name  js-accordion-name">
+											<span class="accordion-name__icon1"></span>
+											Advcash EUR
+											<span class="accordion-name__icon2">
+												<i class="icon-plus close"></i>
+												<i class="icon-cross open"></i>
+											</span>
+										</div>
+										<div class="accordion-cont js-accordion-cont">
+											<div class="block-form mini">
+												<form>
+													<div class="block-field">
+														<label for="purse-name3" class="block-field__label">Название:</label>
+														<input type="text" class="block-field__control" id="purse-name3">
+													</div>
+													<div class="js-purse-holder">
+														<div class="block-field ">
+															<label class="block-field__label">Кошелек:</label>
+															<input type="text" class="block-field__control">
+														</div>
+													</div>
+													<div class="block-field select-mini">
+														<label for="valuta3" class="block-field__label block-field__label_style">Валюта:</label>
+														<select id="valuta3">
+															<option value="RUR">RUR</option>
+															<option value="RUR">2RUR</option>
+														</select>
+													</div>
+													<div class="block-field__btn">
+														<input type="submit" class="btn btn-large js-add-purse" value="Добавить кошелек">
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+									
+									<div class="accordion__item">
+										<div class="accordion-name js-accordion-name">
+											<span class="accordion-name__icon1"></span>
+											Advcash UAH
+											<span class="accordion-name__icon2">
+												<i class="icon-plus close"></i>
+												<i class="icon-cross open"></i>
+											</span>
+										</div>
+										<div class="accordion-cont js-accordion-cont">
+											<div class="block-form mini">
+												<form>
+													<div class="block-field">
+														<label for="purse-name4" class="block-field__label">Название:</label>
+														<input type="text" class="block-field__control" id="purse-name4">
+													</div>
+													<div class="js-purse-holder">
+														<div class="block-field ">
+															<label class="block-field__label">Кошелек:</label>
+															<input type="text" class="block-field__control">
+														</div>
+													</div>
+													<div class="block-field select-mini">
+														<label for="valuta4" class="block-field__label block-field__label_style">Валюта:</label>
+														<select  id="valuta4">
+															<option value="RUR">RUR</option>
+															<option value="RUR">2RUR</option>
+														</select>
+													</div>
+													<div class="block-field__btn">
+														<input type="submit" class="btn btn-large js-add-purse" value="Добавить кошелек">
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+									
+									<div class="accordion__item">
+										<div class="accordion-name js-accordion-name">
+											<span class="accordion-name__icon1"></span>
+											Advcash KZT
+											<span class="accordion-name__icon2">
+												<i class="icon-plus close"></i>
+												<i class="icon-cross open"></i>
+											</span>
+										</div>
+										<div class="accordion-cont js-accordion-cont">
+											<div class="block-form mini">
+												<form>
+													<div class="block-field">
+														<label for="purse-name5" class="block-field__label">Название:</label>
+														<input type="text" class="block-field__control" id="purse-name5">
+													</div>
+													<div class="js-purse-holder">
+														<div class="block-field ">
+															<label class="block-field__label">Кошелек:</label>
+															<input type="text" class="block-field__control">
+														</div>
+													</div>
+													<div class="block-field select-mini">
+														<label for="valuta5" class="block-field__label block-field__label_style">Валюта:</label>
+														<select  id="valuta5">
+															<option value="RUR">RUR</option>
+															<option value="RUR">2RUR</option>
+														</select>
+													</div>
+													<div class="block-field__btn">
+														<input type="submit" class="btn btn-large js-add-purse" value="Добавить кошелек">
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+									
+									<div class="accordion__item">
+										<div class="accordion-name js-accordion-name">
+											<span class="accordion-name__icon1"></span>
+											Perfect money
+											<span class="accordion-name__icon2">
+												<i class="icon-plus close"></i>
+												<i class="icon-cross open"></i>
+											</span>
+										</div>
+										<div class="accordion-cont js-accordion-cont">
+											<div class="block-form mini">
+												<form>
+													<div class="block-field">
+														<label for="purse-name6" class="block-field__label">Название:</label>
+														<input type="text" class="block-field__control" id="purse-name6">
+													</div>
+													<div class="js-purse-holder">
+														<div class="block-field ">
+															<label class="block-field__label">Кошелек:</label>
+															<input type="text" class="block-field__control">
+														</div>
+													</div>
+													<div class="block-field select-mini">
+														<label for="valuta6" class="block-field__label block-field__label_style">Валюта:</label>
+														<select  id="valuta6">
+															<option value="RUR">RUR</option>
+															<option value="RUR">2RUR</option>
+														</select>
+													</div>
+													<div class="block-field__btn">
+														<input type="submit" class="btn btn-large js-add-purse" value="Добавить кошелек">
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+									
+									<div class="accordion__item">
+										<div class="accordion-name js-accordion-name">
+											<span class="accordion-name__icon1"></span>
+											Bitcoin
+											<span class="accordion-name__icon2">
+												<i class="icon-plus close"></i>
+												<i class="icon-cross open"></i>
+											</span>
+										</div>
+										<div class="accordion-cont js-accordion-cont">
+											<div class="block-form mini">
+												<form>
+													<div class="block-field">
+														<label for="purse-name7" class="block-field__label">Название:</label>
+														<input type="text" class="block-field__control" id="purse-name7">
+													</div>
+													<div class="js-purse-holder">
+														<div class="block-field ">
+															<label class="block-field__label">Кошелек:</label>
+															<input type="text" class="block-field__control">
+														</div>
+													</div>
+													<div class="block-field select-mini">
+														<label for="valuta" class="block-field__label block-field__label_style">Валюта:</label>
+														<select  id="valuta">
+															<option value="RUR">RUR</option>
+															<option value="RUR">2RUR</option>
+														</select>
+													</div>
+													<div class="block-field__btn">
+														<input type="submit" class="btn btn-large js-add-purse" value="Добавить кошелек">
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+									
+									<div class="accordion__item">
+										<div class="accordion-name js-accordion-name">
+											<span class="accordion-name__icon1"></span>
+											Eth
+											<span class="accordion-name__icon2">
+												<i class="icon-plus close"></i>
+												<i class="icon-cross open"></i>
+											</span>
+										</div>
+										<div class="accordion-cont js-accordion-cont">
+											<div class="block-form mini">
+												<form>
+													<div class="block-field">
+														<label for="purse-name8" class="block-field__label">Название:</label>
+														<input type="text" class="block-field__control" id="purse-name8">
+													</div>
+													<div class="js-purse-holder">
+														<div class="block-field ">
+															<label class="block-field__label">Кошелек:</label>
+															<input type="text" class="block-field__control">
+														</div>
+													</div>
+													<div class="block-field select-mini">
+														<label for="valuta8" class="block-field__label block-field__label_style">Валюта:</label>
+														<select id="valuta8">
+															<option value="RUR">RUR</option>
+															<option value="RUR">2RUR</option>
+														</select>
+													</div>
+													<div class="block-field__btn">
+														<input type="submit" class="btn btn-large js-add-purse" value="Добавить кошелек">
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+									
+									<div class="accordion__item">
+										<div class="accordion-name js-accordion-name">
+											<span class="accordion-name__icon1"></span>
+											Ltc
+											<span class="accordion-name__icon2">
+												<i class="icon-plus close"></i>
+												<i class="icon-cross open"></i>
+											</span>
+										</div>
+										<div class="accordion-cont js-accordion-cont">
+											<div class="block-form mini">
+												<form>
+													<div class="block-field">
+														<label for="purse-name9" class="block-field__label">Название:</label>
+														<input type="text" class="block-field__control" id="purse-name9">
+													</div>
+													<div class="js-purse-holder">
+														<div class="block-field ">
+															<label class="block-field__label">Кошелек:</label>
+															<input type="text" class="block-field__control">
+														</div>
+													</div>
+													<div class="block-field select-mini">
+														<label for="valuta9" class="block-field__label block-field__label_style">Валюта:</label>
+														<select id="valuta9">
+															<option value="RUR">RUR</option>
+															<option value="RUR">2RUR</option>
+														</select>
+													</div>
+													<div class="block-field__btn">
+														<input type="submit" class="btn btn-large js-add-purse" value="Добавить кошелек">
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion__item">
+										<div class="accordion-name js-accordion-name">
+											<span class="accordion-name__icon1"></span>
+											Xmr
+											<span class="accordion-name__icon2">
+												<i class="icon-plus close"></i>
+												<i class="icon-cross open"></i>
+											</span>
+										</div>
+										<div class="accordion-cont js-accordion-cont">
+											<div class="block-form mini">
+												<form>
+													<div class="block-field">
+														<label for="purse-name10" class="block-field__label">Название:</label>
+														<input type="text" class="block-field__control" id="purse-name10">
+													</div>
+													<div class="js-purse-holder">
+														<div class="block-field ">
+															<label class="block-field__label">Кошелек:</label>
+															<input type="text" class="block-field__control">
+														</div>
+													</div>
+													<div class="block-field select-mini">
+														<label for="valuta10" class="block-field__label block-field__label_style">Валюта:</label>
+														<select id="valuta10">
+															<option value="RUR">RUR</option>
+															<option value="RUR">2RUR</option>
+														</select>
+													</div>
+													<div class="block-field__btn">
+														<input type="submit" class="btn btn-large js-add-purse" value="Добавить кошелек">
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion__item">
+										<div class="accordion-name js-accordion-name">
+											<span class="accordion-name__icon1"></span>
+											Xrp
+											<span class="accordion-name__icon2">
+												<i class="icon-plus close"></i>
+												<i class="icon-cross open"></i>
+											</span>
+										</div>
+										<div class="accordion-cont js-accordion-cont">
+											<div class="block-form mini">
+												<form>
+													<div class="block-field">
+														<label for="purse-name11" class="block-field__label">Название:</label>
+														<input type="text" class="block-field__control" id="purse-name11">
+													</div>
+													<div class="js-purse-holder">
+														<div class="block-field ">
+															<label class="block-field__label">Кошелек:</label>
+															<input type="text" class="block-field__control">
+														</div>
+													</div>
+													<div class="block-field select-mini">
+														<label for="valuta11" class="block-field__label block-field__label_style">Валюта:</label>
+														<select id="valuta11">
+															<option value="RUR">RUR</option>
+															<option value="RUR">2RUR</option>
+														</select>
+													</div>
+													<div class="block-field__btn">
+														<input type="submit" class="btn btn-large js-add-purse" value="Добавить кошелек">
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="aside-2">
+								<ul class="edits">
+									<li class="edits__item">
+										<a href="#" class="edits__link active">Редактировать</a>
+									</li>
+									<li class="edits__item">
+										<a href="#" class="edits__link">Изменить пароль</a>
+									</li>
+									<li class="edits__item">
+										<a href="#" class="edits__link">Добавить документ</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					
+						<!--            tab 3            -->
+						<div class="tab-cont hide tab_3">
+							<div class="main-cont-tab outline">
+								<div class="table">
+									<div class="table-heading">
+										<div class="table-heading__title">Поиск по интервалу времени:</div>
+										<div class="table-heading__form">
+											<form>
+												<div class="field-list clearfix">
+													<div class="field-list__input field-list__input_1 datepicker-holder">
+														<input type="text" class="form-control js-hasDatepicker" id="datepicker1" readonly="" placeholder="Июль 2017">
+														<span class="datepicker-icon"><i class="icon-date"></i></span>
+													</div>
+													<span class="line">-</span>
+													<div class="field-list__input field-list__input_2 datepicker-holder">
+														<input type="text" class="form-control js-hasDatepicker" id="datepicker2" readonly="" placeholder="Август 2017">
+														<span class="datepicker-icon"><i class="icon-date"></i></span>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="table-holder js-h-scroll">
+										<ul class="table-list">
+									    	<li class="table-list__item table-list__item_head">
+								               	<div class="col col_1">Дата</div>
+								               	<div class="col col_2">Введено</div>
+								               	<div class="col col_3">Выведено</div>
+								               	<div class="col col_4">Статус</div>
+									    	</li>
+									    	<li class="table-list__item">
+								               	<div class="col col_1">1 июля 2017</div>
+								               	<div class="col col_2">100bitcoin</div>
+								               	<div class="col col_3">4000 perfect money.</div>
+								               	<div class="col col_4">Завершено</div>
+									    	</li>
+									    	<li class="table-list__item">
+								               	<div class="col col_1">2 июля 2017</div>
+								               	<div class="col col_2">100bitcoin</div>
+								               	<div class="col col_3">4000 perfect money.</div>
+								               	<div class="col col_4">Ждем полуения средств</div>
+									    	</li>
+									    	<li class="table-list__item">
+								               	<div class="col col_1">2 июля 2017</div>
+								               	<div class="col col_2">100bitcoin</div>
+								               	<div class="col col_3">4000 perfect money.</div>
+								               	<div class="col col_4">Выплачивается</div>
+									    	</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!--            tab 4            -->
+						<div class="tab-cont hide tab_4">
+							<div class="main-cont-tab outline">
+								<div class="program">
+									<div class="program-steps">
+										<div class="program__title">Как получить бонусы по партнерской программе:</div>
+										<div class="program-steps-list">
+											<div class="program-steps-list__item">
+												<span class="program-steps-list__img">
+													<i class="icon-mail-2"></i>
+												</span>
+												<p class="program-steps-list__desc">Приглашайте людей на наш сервис по обмену денег.</p>
+											</div>
+											<div class="program-steps-list__item">
+												<span class="program-steps-list__img">
+													<i class="icon-people"></i>
+												</span>
+												<p class="program-steps-list__desc">Люди приходят по приглашению и производят обмен</p>
+											</div>
+											<div class="program-steps-list__item">
+												<span class="program-steps-list__img">
+													<i class="icon-percent"></i>
+												</span>
+												<p class="program-steps-list__desc">Вы - получаете процент от их операций</p>
+											</div>
+										</div>
+									</div>
+									<div class="program-form">
+										<div class="program__title">Ссылка для приглашения:</div>
+										<div class="program__subtitle">Введите Email партнера, которого хотите пригласить:</div>
+										<div class="box-form">
+											<form>
+												<div class="box-field">
+													<div class="box-field__input">
+														<input type="text" class="form-control" placeholder="Ivanov@mail.ru">
+													</div>
+												</div>
+												<div class="box-field__note">По этой ссылке может перейти любое количество пользователей. Бонусы начисляются только за успешно проведенные сделки.</div>
+												<div class="box-field__btn">
+													<input type="submit" class="btn btn-large" value="Пригласить партнера">
+												</div>
+											</form>
+										</div>
+										<div class="invite">
+											<div class="invite__title">Вы пригласили:</div>
+											<ul class="invite-list">
+												<li class="invite-list__item">
+													<span class="invite-list__num">1.</span>
+													<div class="invite-list__cont">
+														<div class="invite-list__name">Иван Иванов</div>
+														<a href="mailto:Ivanov@mail.ru" class="invite-list__mail">Ivanov@mail.ru</a>
+														<div class="invite-list__desc">0.05% - 45advcash USD</div>
+													</div>
+												</li>
+												<li class="invite-list__item">
+													<span class="invite-list__num">2.</span>
+													<div class="invite-list__cont">
+														<div class="invite-list__name">Петр Петрова</div>
+														<a href="mailto:Petrov@mail.ru" class="invite-list__mail">Petrov@mail.ru</a>
+														<div class="invite-list__desc">0.05% - 45advcash USD</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="program__bonuses">Получили бонусов: 0.05$</div>
+										<a href="#" class="program__link">Перейти к бонусному счету</a>
+									</div>
+								</div>
+							</div>
+							<div class="aside-2">
+								<ul class="edits">
+									<li class="edits__item">
+										<a href="#" class="edits__link active">Редактировать</a>
+									</li>
+									<li class="edits__item">
+										<a href="#" class="edits__link">Изменить пароль</a>
+									</li>
+									<li class="edits__item">
+										<a href="#" class="edits__link">Добавить документ</a>
+									</li>
+								</ul>
+								<div class="calculator inverse">
+									<div class="calculator__title">Калькулятор</div>
+									<div class="calculator__form">
+										<label for="input-give" class="box-field__label">Сумма</label>
+										<div class="box-field__input">
+											<input type="text" class="form-control" placeholder="2000" id="input-give">
+											<div class="box-field__valuta">$</div>
+										</div>
+									</div>
+									<div class="calculator__bonuses">Бонусы: <span>0.05%</span></div>
+									<div class="calculator__result">Вы получите <span>1.00$</span></div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</main>	
+			
+<!-- CONTENT EOF   -->
+
+<!-- BEGIN HEADER -->
+
+	<header class="inverse">		
+		<div class="wrapper">
+			<div class="header-cont">
+				<nav class="main-nav">
+					<a href="#" class="button-nav js-button-nav">
+						<span class="button-nav__cont">
+							<span class="line"></span>
+							<span class="line"></span>
+							<span class="line"></span>
+						</span>
+					</a>
+	            	<ul class="main-nav-list">
+	                	<li class="main-nav-list__item"><a href="index.html" class="main-nav-list__link">Курсы валют</a></li>
+						<li class="main-nav-list__item"><a href="inform.html" class="main-nav-list__link">Партнерская программа</a></li>
+						<li class="main-nav-list__item"><a href="verification.html" class="main-nav-list__link">Соглашение</a></li>
+						<li class="main-nav-list__item"><a href="contacts.html" class="main-nav-list__link">Контакты</a></li>
+	            	</ul>
+		     	</nav>
+	        	<div class="header__btn">
+	        		<a href="#" class="btn btn_outline js-btn-call">Перезвоните мне</a>
+	        		<div class="drop drop-call" id="drop4">
+        				<div class="drop-cont">
+							<div class="drop-form form-default">
+								<form>
+									<div class="drop__title-brand">Заполните форму и мы Вам перезвоним!</div>
+									<div class="block-field-list">
+										<div class="block-field clearfix">
+											<input type="text" class="block-field__control" name="login" placeholder="Имя">
+										</div>
+										<div class="block-field clearfix">
+											<input type="tel" class="block-field__control mask" name="tel" placeholder="+7 ( __ ) -  __  -  _  -  _">
+										</div>
+										<div class="block-field clearfix">
+											<textarea class="block-field__control" name="comment" placeholder="Ваш вопрос или комментарий"></textarea>
+										</div>
+									</div>
+									<div class="block-field__btn">
+										<input type="submit" class="btn btn-large" value="Перезвоните мне">
+									</div>
+								</form>
+							</div>
+						</div>
+        			</div>
+	        	</div>
+	        	<div class="site-version">
+	        		<a href="#" class="site-version__holder js-version" data-more="Dark version" data-less="Light version">
+						<span class="site-version__btn js-version-btn"></span>
+						<span class="site-version__text js-version-text">Dark version</span>
+					</a>
+	        	</div>
+	        	<ul class="header-links">
+	        		<li class="header-links__item">
+	        			<a href="#" class="header-links__link link-login js-login">Вход</a>
+	        			<div class="drop" id="drop1">
+	        				<div class="drop-cont">
+	        					<div class="drop-form">
+	        						<form class="form-validation-1">
+	        							<div class="block-field-list">
+											<div class="block-field clearfix">
+												<label for="login" class="block-field__label">Логин:</label>
+												<input type="text" class="block-field__control"  id="login" name="login">
+											</div>
+											<div class="block-field clearfix">
+												<label for="pass" class="block-field__label">Пароль:</label>
+												<input type="password" class="block-field__control" id="pass" name="password">
+											</div>
+										</div>
+										<div class="forget">
+											<a href="#">Забыли пароль?</a>
+										</div>
+										<div class="block-field__btn">
+											<input type="submit" class="btn btn-large" value="Войти">
+										</div>
+									</form>
+	        					</div>
+	        				</div>
+        					<div class="drop-footer inverse">
+        						<div class="social">
+        							<div class="social__title">Войти через:</div>
+        							<ul class="social-list">
+        								<li class="social-list__item"><a href="#" class="social-list__link"><i class="icon-fb"></i></a></li>
+        								<li class="social-list__item"><a href="#" class="social-list__link"><i class="icon-ok"></i></a></li>
+        								<li class="social-list__item"><a href="#" class="social-list__link social-list__link_3"><i class="icon-google"></i></a></li>
+        								<li class="social-list__item"><a href="#" class="social-list__link social-list__link_4"><i class="icon-twitter"></i></a></li>
+        							</ul>
+        						</div>
+        					</div>
+	        			</div>
+	        		</li>
+
+
+	        		<li class="header-links__item">
+	        			<a href="#" class="header-links__link js-register">Регистрация</a>
+	        			<div class="drop drop-register" id="drop2">
+	        				<div class="drop-cont">
+	        					<div class="drop-form drop-form_register">
+	        						<form class="form-validation-2">
+	        							<div class="block-field-list">
+											<div class="block-field clearfix">
+												<label for="email-inviter" class="block-field__label">Email пригласителя:</label>
+												<input type="email" name="emailInviter" class="block-field__control" id="email-inviter">
+												<div class="form-tooltip"> Email того, кто пригласил.</div>
+											</div>
+											<div class="block-field clearfix">
+												<label for="email-your" class="block-field__label">Ваш Email:</label>
+												<input type="email" name="emailYour" class="block-field__control" id="email-your">
+											</div>
+											<div class="block-field clearfix">
+												<label for="name" class="block-field__label">Имя:</label>
+												<input type="text" name="name" class="block-field__control" id="name">
+											</div>
+											<div class="block-field clearfix">
+												<label for="pass-register" class="block-field__label">Пароль:</label>
+												<input type="password" name="passwordRegister" class="block-field__control" id="pass-register">
+											</div>
+											<div class="block-field clearfix">
+												<label for="pass-again" class="block-field__label">Подтвердите пароль:</label>
+												<input type="password" name="passwordAgain" class="block-field__control" id="pass-again">
+											</div>
+											<div class="block-field">
+												<label for="sex" class="block-field__label">Пол:</label>
+												<select id="sex">
+													<option value="Мужской">Мужской</option>
+													<option value="Женский">Женский</option>
+												</select>
+											</div>
+										</div>
+										<div class="agree">
+											<label>
+												<input type="checkbox" class="checkbox" name="checkbox">     
+												<span class="agree__text">Я принимаю условия <a href="#">пользовательского соглашения</a></span>
+											</label>
+										</div>
+										<div class="block-field__btn">
+											<input type="submit" class="btn btn-large js-btn-register" value="Зарегистрироваться" >
+										</div>
+									</form>
+	        					</div>
+	        				</div>
+        				</div>
+        				<div class="drop drop-register drop-register-success" id="drop3">
+	        				<div class="drop-cont">
+	        					<div class="drop__title">Регистрация успешна!</div>
+	        					<div class="drop__desc">На указанный вами Email было отправлено письмо с дальнейшими инструкциями.</div>
+	        					<div class="drop__btn">
+	        						<a href="index.html" class="btn btn-large js-btn-success">На главную</a>
+	        					</div>
+	        				</div>
+	        			</div>
+	        		</li>
+	        	</ul>
+	        </div>
+		</div>		
+	</header>
+	
+<!-- HEADER EOF   -->	
+
+<!-- BEGIN FOOTER -->	
+	
+	<footer >
+		<div class="wrapper">
+			<div class="footer-holder inverse">
+				<ul class="footer-menu">
+					<li class="footer-menu__item"><a href="#" class="footer-menu__link">Курсы валют</a></li>
+					<li class="footer-menu__item"><a href="#" class="footer-menu__link">Партнерская программа</a></li>
+					<li class="footer-menu__item"><a href="#" class="footer-menu__link">Соглашение</a></li>
+					<li class="footer-menu__item"><a href="#" class="footer-menu__link">Контакты</a></li>
+				</ul>
+				<div class="copy">© 2017 единый обмен валюты</div>
+			</div>
+		</div>	
+	</footer>
+	
+<!-- FOOTER EOF   -->
+
+</div>		
+
+<div class="icon-load"></div>		
+
+<!-- BODY EOF   -->
+	
+	<script type="text/javascript" src="js/jquery-3.0.0.min.js?ver1.2"></script>		
+	<script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js?ver1.2" ></script>
+	<script type="text/javascript" src="js/components/jquery.formstyler.js?ver1.2" ></script>
+	<script type="text/javascript" src="js/components/jquery.fancybox.js?ver1.2" ></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js?ver1.2" ></script>
+	<script type="text/javascript" src="js/components/jquery.validate.js?ver1.2" ></script>
+	<script type="text/javascript" src="js/components/jquery.mCustomScrollbar.js?ver1.2" ></script>
+	<script type="text/javascript" src="js/components/datepicker-ru.js?ver1.2" ></script>
+	<script type="text/javascript" src="js/components/particles.min.js?ver1.2" ></script>
+	<script type="text/javascript" src="js/custom.js?ver1.2" ></script>
+</body>
+</html>

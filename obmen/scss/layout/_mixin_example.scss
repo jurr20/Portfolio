@@ -1,0 +1,16 @@
+@import "../base/_reset";
+@import "../base/_fonts";
+
+/* example mixins */
+
+
+.font{
+	@include font(14px,18px,#000);
+}
+.center_transform{
+	@include center_transform();
+}
+
+
+
+/* example mixins */

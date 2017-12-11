@@ -1,0 +1,28 @@
+/* reset */
+$min-width: 320px; 
+$max-width: 1250px; 
+$base-bg: #FFF; 
+$base-font-size: 20px; 
+$base-line-height: 1.1em; 
+$base-font-family: 'Proxima Nova', sans-serif; 
+$custom-font-family: 'Proxima Nova', sans-serif; 
+$link-color: #383838;
+$default-transition:all 0.2s linear;
+
+$base-font-size-resize: 15px;
+/* main variables */
+
+//text, titles
+$text-color: #383838;
+$title-color: #1e2c41;
+$title-font-family: $custom-font-family;
+
+$brand-color: #fb7901;
+
+$font-size-h1: 3em;
+$line-height-h1: 1.45em;
+$font-size-h2: 2.4em;
+$line-height-h2: 1.2em;
+$font-size-h3: 1.1em;
+$line-height-h3: 1.18em;
+

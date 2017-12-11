@@ -1,0 +1,30 @@
+/* reset */
+$min-width: 320px; 
+$max-width: 1250px; 
+$base-bg: #FFF; 
+$base-font-size: 16px; 
+$base-line-height: 21px; 
+$base-font-family: Arial, sans-serif; 
+$custom-font-family: 'Intro', sans-serif;
+$custom-font-family-second: 'Roboto', sans-serif;
+$default-transition:all 0.2s linear;
+
+/* main variables */
+
+//text, titles
+$text-color: #242424;
+$title-color: #000;
+$title-font-family: $custom-font-family;
+$link-color: $text-color;
+
+$font-size-h1: 41.5px;
+$line-height-h1: 66px;
+$font-size-h2: 31px;
+$line-height-h2: 41px;
+$font-size-h3: 28px;
+$line-height-h3: 32px;
+
+$brand-color: #34bdd4;
+$brand-color-second: #ec568d;
+$bg-color: #efefef;
+$bg-color-dark: #263642;
